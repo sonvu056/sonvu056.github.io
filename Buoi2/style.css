@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+a:hover {
+  background-color: yellow;
+}
+
 .header .header-top {
   display: flex;
   margin-top: 10px;
@@ -95,4 +99,21 @@ img {
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 150px;
+}
+
+.wrapper-post {
+  margin-left: 50px;
+  margin-right: 500px;
+  line-height: 1.5;
+}
+
+.post img{
+  width: 650px;
+  object-fit: cover;
+}
+
+.post figcaption{
+  background-color: rgb(236, 213, 213);
+  margin-right: 150px;
+  margin-bottom: 20px;
 }
