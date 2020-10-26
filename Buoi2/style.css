@@ -107,12 +107,12 @@ img {
   line-height: 1.5;
 }
 
-.post img{
+.post img {
   width: 650px;
   object-fit: cover;
 }
 
-.post figcaption{
+.post figcaption {
   background-color: rgb(236, 213, 213);
   margin-right: 150px;
   margin-bottom: 20px;

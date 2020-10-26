@@ -1,0 +1,106 @@
+/* CSS reset */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+/* Container */
+.container {
+  width: 960px;
+  margin: auto;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.829);
+}
+
+.menu-text {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-image {
+  vertical-align: middle;
+}
+
+/* Main */
+
+.banner-image {
+  width: 960px;
+}
+
+.product-row {
+  text-align: center;
+}
+
+.product-row-image img {
+  width: 160px;
+  height: 200px;
+}
+.product-row-item {
+  display: inline-block;
+  border: 2px solid none;
+  margin: 7px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.product-row-item:hover {
+  border: 2px solid cyan;
+  overflow: hidden;
+}
+
+.menu-bottom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-bottom-link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-bottom-info {
+  display: inline-block;
+}
+.menu-bottom-text {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.footer-logo {
+  display: flex;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.footer-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 90%;
+  color: rgba(255, 255, 255, 0.685);
+}
