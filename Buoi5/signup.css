@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  border: 1px solid rgb(243, 244, 245);
+  border-radius: 5px;
+  width: 400px;
+  text-align: center;
+  margin: 30px;
+}
+
+.signup-content {
+  border-bottom: 1px solid rgb(243, 244, 245);
+  text-align: left;
+  padding: 10px;
+}
+
+#name,
+#surname,
+#email,
+#password,
+#day,
+#month,
+#year,
+.gender {
+  width: 45%;
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(243, 244, 245);
+  background-color: rgb(245, 246, 247);
+  padding-left: 7px;
+}
+
+#email,
+#password {
+  width: 368px;
+}
+
+#day,
+#month,
+#year {
+  display: inline-block;
+  width: 120px;
+}
+
+.text {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.gender {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  margin: 10px;
+}
+
+.gender label {
+  padding-top: 5px;
+}
+
+#bottom-text {
+  text-align: left;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.btn-signup a {
+  text-decoration: none;
+  color: white;
+}
+.btn-signup button {
+  width: 170px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(52, 146, 33);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bolder;
+}

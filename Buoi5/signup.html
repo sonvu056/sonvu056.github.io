@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <form id="login" action="">
+        <div class="signup-content">
+          <h3>Đăng ký</h3>
+          <p>Nhanh chóng và dễ dàng.</p>
+        </div>
+        <div class="signup-main">
+          <input id="name" type="text" placeholder="Họ" />
+          <input id="surname" type="text" placeholder="Tên" />
+          <input id="email" type="text" placeholder="Số di động hoặc email" />
+          <input id="password" type="password" placeholder="Mật khẩu mới" />
+          <div class="text">
+            <label for="">Ngày sinh</label>
+          </div>
+          <select name="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="30" selected>30</option>
+          </select>
+          <select name="month" id="month">
+            <option value="Tháng 1">Tháng 1</option>
+            <option value="Tháng 2">Tháng 2</option>
+            <option value="Tháng 12" selected>Tháng 12</option>
+          </select>
+          <select name="year" id="year">
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="1990" selected>1990</option>
+          </select>
+          <div class="text">
+            <label for="">Giới tính</label>
+          </div>
+          <div class="gender">
+            <label for="female">Nữ</label>
+            <input type="radio" name="gender" id="female" />
+          </div>
+          <div class="gender">
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="male" />
+          </div>
+          <div class="gender">
+            <label for="male">Tùy chỉnh</label>
+            <input type="radio" name="gender" id="other" />
+          </div>
+          <p id="bottom-text">
+            Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách dữ
+            liệu và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông
+            báo của chúng tôi qua SMS và hủy nhận bất kỳ lúc nào.
+          </p>
+        </div>
+        <div class="btn-signup">
+              <button type="submit"><a href="#">Đăng ký</a></button>
+            </div>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
