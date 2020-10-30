@@ -43,6 +43,10 @@ main {
 .btn-box {
   text-align: center;
 }
+.btn-box a {
+  color: white;
+  text-decoration: none;
+}
 .btn-box button {
   width: 100%;
   padding: 15px;
