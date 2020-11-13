@@ -1,0 +1,337 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1000;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+/* Style */
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.dark-green {
+  color: #099;
+}
+
+.black-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.text-primary {
+  color: #3cc;
+}
+
+.img-right {
+  margin-left: 30px;
+  margin-right: 0;
+}
+/* Body */
+.container {
+  padding: 30px;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.site-header {
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 160px;
+}
+
+.site-logo {
+  margin-right: 30px;
+}
+
+.site-name {
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+.left-inner {
+  max-width: 500px;
+  width: 100%;
+}
+
+.page-nav-item {
+  margin-top: 20px;
+}
+
+.page-link {
+  min-width: 240px;
+  height: 100px;
+  background-color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.page-link:hover,
+.page-link:active {
+  background-color: #099;
+  color: white;
+}
+
+.page-link-icon {
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 1.5rem;
+}
+
+.drinks-nav > ul > li > a {
+  color: white;
+  font-size: 1.2rem;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+.drinks-nav {
+  height: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main {
+  max-width: 660px;
+}
+
+.drinks-nav > ul {
+  height: 100%;
+}
+
+.drinks-nav > ul > li a:hover {
+  color: #96feff;
+  border-bottom: 4px solid #96feff;
+}
+
+.list-item {
+  margin-top: 20px;
+}
+
+.list-item-2 {
+  align-items: flex-start;
+}
+
+.list-item-img {
+  margin-right: 20px;
+  width: 160px;
+  height: 160px;
+  background-color: #099;
+}
+
+.list-item-img-big {
+  margin-right: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.list-item-text {
+  padding: 20px 25px;
+  flex: 1;
+}
+
+.list-item-text-2 {
+  line-height: 2rem;
+  padding-left: 20px;
+  flex: 1;
+}
+
+.list-item-name {
+  margin-top: 0;
+}
+
+.list-item-price {
+  color: #96feff;
+}
+
+.list-item-description {
+  height: 4rem;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+#hot,
+#juice {
+  display: none;
+}
+
+#about,
+#special,
+#contact {
+  display: none;
+}
+
+/* About */
+.about-box-1 {
+  padding: 40px 30px 50px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-box-2 {
+  padding: 50px 40px 30px;
+}
+.about-header {
+  margin-left: 220px;
+}
+/* Special */
+.special-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px -10px 0;
+}
+
+.special-item {
+  max-width: 320px;
+  margin: 30px 10px;
+}
+
+.special-item-title {
+  font-size: 1.4rem;
+}
+.special-item-description {
+  padding: 25px 30px;
+}
+
+/* Contact */
+.contact-text-container {
+  padding: 45px 50px;
+  margin-bottom: 20px;
+  line-height: 2rem;
+}
+
+.contact-form-container {
+  max-width: 460px;
+  padding: 40px 50px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.btn-primary {
+  color: #099;
+  background-color: white;
+  border: 0;
+  padding: 12px 40px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #099;
+}
+
+.align-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* Video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

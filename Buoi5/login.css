@@ -82,17 +82,17 @@ img {
   color: rgb(80, 135, 206);
 }
 
-..btn-signup {
+.btn-signup {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-..btn-signup a {
+.btn-signup a {
   text-decoration: none;
   color: white;
 }
-..btn-signup button {
+.btn-signup button {
   width: 60%;
   padding: 15px;
   border-radius: 5px;

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave Cafe</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row flex justify-between">
+        <div class="left">
+          <div class="left-inner fixed">
+            <div
+              class="site-header flex justify-center align-center dark-green"
+            >
+              <i class="fas fa-coffee fa-3x site-logo"></i>
+              <h1 class="site-name">Wave Cafe</h1>
+            </div>
+
+            <nav class="site-nav">
+              <ul class="site-nav-ul flex flex-wrap justify-between">
+                <li class="page-nav-item">
+                  <a
+                    href="#"
+                    class="page-link flex align-center dark-green"
+                    onclick="drink_display()"
+                  >
+                    <i class="fas fa-mug-hot page-link-icon"></i>
+                    <span>Drink Menu</span>
+                  </a>
+                </li>
+                <li class="page-nav-item">
+                  <a
+                    href="#"
+                    class="page-link flex align-center dark-green"
+                    onclick="about_display()"
+                  >
+                    <i class="fas fa-users page-link-icon"></i>
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li class="page-nav-item">
+                  <a
+                    href="#"
+                    class="page-link flex align-center dark-green"
+                    onclick="special_display()"
+                  >
+                    <i class="fas fa-glass-martini page-link-icon"></i>
+                    <span>Special Items</span>
+                  </a>
+                </li>
+                <li class="page-nav-item">
+                  <a
+                    href="#"
+                    class="page-link flex align-center dark-green"
+                    onclick="contact_display()"
+                  >
+                    <i class="fas fa-comments page-link-icon"></i>
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!--  -->
+        <div class="right">
+          <div class="main">
+            <!--  -->
+            <div id="drink" class="page-content">
+              <nav class="drinks-nav black-bg">
+                <ul class="flex align-center justify-between">
+                  <li class="inline-block">
+                    <a
+                      href="#"
+                      class="tab-link"
+                      id="nav-cold"
+                      onclick="cold_display()"
+                      >Iced Coffee</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="#"
+                      class="tab-link"
+                      id="nav-hot"
+                      onclick="hot_display()"
+                      >Hot Coffee</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="#"
+                      class="tab-link"
+                      id="nav-juice"
+                      onclick="juice_display()"
+                      >Fruit Juice</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div id="cold" class="tab-content">
+                <div class="list">
+                  <div class="list-item flex align-center justify-between">
+                    <img
+                      src="img/iced-americano.png"
+                      alt="Image"
+                      class="list-item-img"
+                    />
+                    <div class="black-bg list-item-text">
+                      <h3 class="list-item-name flex justify-between">
+                        Iced Americano<span class="list-item-price"
+                          >$10.25</span
+                        >
+                      </h3>
+                      <p class="list-item-description">
+                        Here is a short description for the first item. Wave
+                        Cafe Template is provided by Tooplate.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="hot" class="tab-content">
+                <div class="list">
+                  <div class="list-item flex align-center justify-between">
+                    <img
+                      src="img/hot-americano.png"
+                      alt="Image"
+                      class="list-item-img"
+                    />
+                    <div class="black-bg list-item-text">
+                      <h3 class="list-item-name flex justify-between">
+                        Iced Americano<span class="list-item-price"
+                          >$10.25</span
+                        >
+                      </h3>
+                      <p class="list-item-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Laudantium debitis a, inventore earum beatae a
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="juice" class="tab-content">
+                <div class="list">
+                  <div class="list-item flex align-center justify-between">
+                    <img
+                      src="img/smoothie-1.png"
+                      alt="Image"
+                      class="list-item-img"
+                    />
+                    <div class="black-bg list-item-text">
+                      <h3 class="list-item-name flex justify-between">
+                        Iced Americano<span class="list-item-price"
+                          >$10.25</span
+                        >
+                      </h3>
+                      <p class="list-item-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Laudantium debitis a, inventore earum beatae
+                        adipisci eius possimus nihil molestiae doloremque
+                        accusantium. Delectus minima vel repudiandae officiis
+                        aperiam, neque reprehenderit at!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div id="about" class="page-content">
+              <div class="black-bg about-box-1">
+                <h2 class="text-primary about-header">About Wave Cafe</h2>
+                <div class="list-item list-item-2 flex">
+                  <img
+                    src="img/about-1.png"
+                    alt="Image"
+                    class="tm-list-item-img tm-list-item-img-big"
+                  />
+                  <div class="list-item-text-2">
+                    <p class="mb-20">
+                      Wave Cafe is a one-page video background HTML CSS template
+                      from Tooplate. You can use this for your business
+                      websites.
+                    </p>
+                    <p>
+                      You can also use this for your client websites which you
+                      get paid for your website services. Please tell your
+                      friends about us.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="black-bg mb-20 about-box-2">
+                <div class="list-item list-item-2">
+                  <div class="list-item list-item-2">
+                    <div class="list-item-text-2">
+                      <h2 class="text-primary">How we began</h2>
+                      <p>
+                        If you wish to support us, please contact Tooplate.
+                        Thank you. Duis bibendum erat nec ipsum consectetur
+                        sodales.
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    src="img/about-2.png"
+                    alt="Image"
+                    class="list-item-img list-item-img-big img-right flex"
+                  />
+                </div>
+
+                <div class="list-item-text-2 flex flex-column">
+                  <p>
+                    Donec non urna elit. Quisque ut magna in dui mattis iaculis
+                    eu finibus metus. Suspendisse vel mi a lacus finibus
+                    vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div id="special" class="page-content">
+              <div class="special-items">
+                <div class="black-bg special-item">
+                  <img src="img/special-01.jpg" alt="Image" />
+                  <div class="special-item-description">
+                    <h2 class="text-primary special-item-title">Special One</h2>
+                    <p class="special-item-text">
+                      Here is a short text description for the first special
+                      item. You are not allowed to redistribute this template
+                      ZIP file.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div id="contact" class="page-content">
+              <div class="black-bg contact-text-container">
+                <h2 class="text-primary">Contact Wave</h2>
+                <p>
+                  Wave Cafe Template has a video background. You can use this
+                  layout for your websites. Please contact Tooplate's Facebook
+                  page. Tell your friends about our website.
+                </p>
+              </div>
+
+              <div class="black-bg contact-form-container align-right">
+                <form
+                  action=""
+                  method="POST"
+                  id="contact-form"
+                >
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required=""
+                    />
+                  </div>
+                  <div class="form-group mb-30">
+                    <textarea
+                      rows="6"
+                      name="message"
+                      class="form-control"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn-primary align-right">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="video-wrapper">
+      <video autoplay muted loop id="video">
+        <source src="video/my-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/3f4bb4915b.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function cold_display() {
+      document.getElementById("cold").style.display = "flex";
+      document.getElementById("nav-cold").style.color = "#96feff";
+      document.getElementById("nav-cold").style.borderBottom =
+        "4px solid #96feff";
+      document.getElementById("hot").style.display = "none";
+      document.getElementById("nav-hot").style.color = "white";
+      document.getElementById("nav-hot").style.borderBottom = "none";
+      document.getElementById("juice").style.display = "none";
+      document.getElementById("nav-juice").style.color = "white";
+      document.getElementById("nav-juice").style.borderBottom = "none";
+    }
+
+    function hot_display() {
+      document.getElementById("cold").style.display = "none";
+      document.getElementById("nav-cold").style.color = "white";
+      document.getElementById("nav-cold").style.borderBottom = "none";
+      document.getElementById("hot").style.display = "flex";
+      document.getElementById("nav-hot").style.color = "#96feff";
+      document.getElementById("nav-hot").style.borderBottom =
+        "4px solid #96feff";
+      document.getElementById("juice").style.display = "none";
+      document.getElementById("nav-juice").style.color = "white";
+      document.getElementById("nav-juice").style.borderBottom = "none";
+    }
+
+    function juice_display() {
+      document.getElementById("cold").style.display = "none";
+      document.getElementById("nav-cold").style.color = "white";
+      document.getElementById("nav-cold").style.borderBottom = "none";
+      document.getElementById("hot").style.display = "none";
+      document.getElementById("nav-hot").style.color = "white";
+      document.getElementById("nav-hot").style.borderBottom = "none";
+      document.getElementById("juice").style.display = "flex";
+      document.getElementById("nav-juice").style.color = "#96feff";
+      document.getElementById("nav-juice").style.borderBottom =
+        "4px solid #96feff";
+    }
+
+    function drink_display() {
+      document.getElementById("drink").style.display = "block";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("special").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+    }
+
+    function about_display() {
+      document.getElementById("drink").style.display = "none";
+      document.getElementById("about").style.display = "block";
+      document.getElementById("special").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+    }
+
+    function special_display() {
+      document.getElementById("drink").style.display = "none";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("special").style.display = "block";
+      document.getElementById("contact").style.display = "none";
+    }
+
+    function contact_display() {
+      document.getElementById("drink").style.display = "none";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("special").style.display = "none";
+      document.getElementById("contact").style.display = "block";
+    }
+  </script>
+</html>
