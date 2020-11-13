@@ -36,6 +36,10 @@ a {
 h2 {
   margin-bottom: 20px;
 }
+
+p {
+  margin-bottom: 10px;
+}
 #video {
   position: fixed;
   right: 0;
