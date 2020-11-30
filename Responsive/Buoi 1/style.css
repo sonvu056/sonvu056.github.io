@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+.item {
+  background-color: blue;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 640px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 300%;
+        background-color: pink;
+        grid-template-columns: 1fr;
+        padding: 15px;
+        grid-auto-rows: calc((100vh - 60px)/2);
+    }
+}
