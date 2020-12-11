@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="scr">
+            <p id="line1"></p>
+            <p id="line2">0</p>
+        </div>
+
+        <div class="cal-button">
+            <div class="button other" id="clear" onclick="clr()">C</div>
+            <div class="button other" id="minus">+/-</div>
+            <div class="button other" id="percentage">%</div>
+            <div class="button operator" id="divide" onclick="dis(`/`)">÷</div>
+            <div class="button number" id="seven" onclick="dis(7)">7</div>
+            <div class="button number" id="eight" onclick="dis(8)">8</div>
+            <div class="button number" id="nine" onclick="dis(9)">9</div>
+            <div class="button operator" id="multi" onclick="dis(`x`)">X</div>
+            <div class="button number" id="four" onclick="dis(4)">4</div>
+            <div class="button number" id="five" onclick="dis(5)">5</div>
+            <div class="button number" id="six" onclick="dis(6)">6</div>
+            <div class="button operator" id="sub" onclick="dis(`-`)">-</div>
+            <div class="button number" id="one" onclick="dis(1)">1</div>
+            <div class="button number" id="two" onclick="dis(2)">2</div>
+            <div class="button number" id="three" onclick="dis(3)">3</div>
+            <div class="button operator" id="add" onclick="dis(`+`)">+</div>
+            <div class="button number" id="zero" onclick="dis(0)">0</div>
+            <div class="button number" id="point">,</div>
+            <div class="button operator" id="result" onclick="sovle()">=</div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
