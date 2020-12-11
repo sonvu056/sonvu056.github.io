@@ -22,9 +22,12 @@
     padding: 15px 20px 0;
 }
 p {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     height: 50px;
+    font-size: 45px;
 }
+
 .cal-button {
     display: grid;
     grid-template-columns: repeat(4,50px);
