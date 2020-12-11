@@ -1,6 +1,8 @@
+temp = "";
 function clr() {
   document.getElementById("line1").innerText = "";
   document.getElementById("line2").innerText = "0";
+  temp = "";
 }
 
 function dis(val) {
@@ -9,9 +11,6 @@ function dis(val) {
 }
 
 function sovle() {
-  temp = document.getElementById("line1");
-  if (document.getElementById("line1" != "")) {
-  }
   document.getElementById("line2").innerText = eval(
     document.getElementById("line1").innerText
   );
