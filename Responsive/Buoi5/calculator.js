@@ -16,6 +16,10 @@ function solve() {
 }
 function minus() {
   temp = document.getElementById("line2").innerText;
-  temp = "-" + temp;
+  if (temp[0] == "-") {
+    temp = temp.replace("-", "");
+  } else {
+    temp = "-" + temp;
+  }
   document.getElementById("line2").innerText = temp;
 }
