@@ -31,6 +31,9 @@ a {
 a:hover {
     color: black;
 }
+ul {
+    margin: 0;
+}
 ul li {
     display: inline-block;
     list-style: none;
@@ -74,17 +77,22 @@ h3 {
     padding: 70px; 
     background-color: #fff;
 }
+.menu-mobi {
+    display: none;
+}
 .header-top {
     justify-content: space-between;   
     padding-bottom: 70px;
 }
 .navbar {
-    position: relative;
-    right: -50px;
+    padding-top: 10px;
+    width: 60%;
 }
-.navbar ul li{
-    padding-left: 50px;
-    padding-right: 50px;
+.navbar ul {
+    padding-left: 0;
+}
+.menu {
+    justify-content: space-between;
 }
 .bg-img {
     width: 100%;
@@ -101,7 +109,10 @@ h3 {
     padding-bottom: 135px;
 }
 .item {
-    max-width: 420px;
+    width: 45%;
+}
+.item img {
+    width: 100%;
 }
 .item-tag {
     padding-top: 30px;
@@ -170,15 +181,79 @@ h3 {
     background-color: #f0f0f0;
     justify-content: space-between;
     align-items: center;
-    padding-left: 150px;
-    padding-right: 70px;
+    padding-left: 12.5%;
+    padding-right: 6%;
 }
 .left a{
     padding-left: 20px;
 }
-.right ul {
-    margin: 0;
-}
 .right ul li {
     padding-left: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row {
+        display: block;
+        padding-bottom: 0;
+    }
+    .item {
+        width: 100%;
+        padding-bottom: 135px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 10px 0;
+    }
+    .header-top {
+        display: none;
+    }
+    .menu-mobi {
+        display: block;
+        padding-bottom: 70px;
+    }
+    .menu-top {
+        display: flex;
+        padding-left: 10px;
+    }
+    .menu-button button{
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .menu-button button div {
+        height: 5px;
+        background-color: #626262;
+        margin: 5px 0;
+    }  
+    .logo {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .drop-down-menu {
+        display: flex;
+        background-color: #f0f0f0;
+        border: 1px solid transparent;
+    }
+    .drop-down-menu ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .drop-down-menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;       
+    }
+    .drop-down-menu ul li a {
+        width: 100%;
+        text-align: center;
+    }
+    .drop-down-menu ul li:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+} 
