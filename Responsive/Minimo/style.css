@@ -33,6 +33,7 @@ a:hover {
 }
 ul {
     margin: 0;
+    padding: 0;
 }
 ul li {
     display: inline-block;
@@ -125,7 +126,7 @@ h3 {
     overflow: hidden;
 }
 .item a:hover {
-    color: #626262
+    color: #626262;
 }
 .sign-up {
     background-color: #f0f0f0;
@@ -276,7 +277,19 @@ h3 {
         margin-right: -50px;
     }
     .footer {
-        padding-left: 20px;
-        padding-right: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+    .left {
+        padding-bottom: 20px;
+    }
+    .left, .right {
+        justify-content: space-between;
+    }
+    .right ul li:nth-child(1), .left ul li:nth-child(1) {
+        padding-left: 0;
     }
 } 
