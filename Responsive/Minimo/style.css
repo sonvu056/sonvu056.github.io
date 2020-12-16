@@ -124,6 +124,9 @@ h3 {
     max-height: 100px;
     overflow: hidden;
 }
+.item a:hover {
+    color: #626262
+}
 .sign-up {
     background-color: #f0f0f0;
     margin-left: -150px;
@@ -215,7 +218,7 @@ h3 {
 }
 @media screen and (max-width: 576px) {
     .header {
-        padding: 10px 0;
+        padding: 20px 0;
     }
     .header-top {
         display: none;
