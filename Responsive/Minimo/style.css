@@ -1,7 +1,7 @@
 @font-face {
   font-family: "playfair_display";
-  src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
-    url("/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  src: url('/fonts/PlayfairDisplay-Regular.ttf') format("truetype"),
+    url('/fonts/PlayfairDisplay-Regular.woff2') format("woff2");
   font-weight: normal;
   font-style: normal;
 }
