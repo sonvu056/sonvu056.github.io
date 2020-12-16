@@ -69,6 +69,9 @@ h3 {
 .flex {
   display: flex;
 }
+.iconsolata {
+    font-family: 'iconsolata';
+}
 /* Container */
 .container {
   max-width: 1200px;
@@ -86,9 +89,6 @@ h3 {
 .header-top {
   justify-content: space-between;
   padding-bottom: 70px;
-}
-.logo {
-    font-family: 'iconsolata';
 }
 .navbar {
   padding-top: 10px;
