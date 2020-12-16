@@ -1,12 +1,13 @@
 @font-face {
    font-family: 'playfair_display';
-   src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+   src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('/fonts/PlayfairDisplay-Regular.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
 }
 @font-face {
    font-family: 'inconsolata';
-   src: url('/fonts/Inconsolata-Regular.ttf') format('truetype');
+   src: url('/fonts/Inconsolata-Regular.ttf') format('truetype'),
+   url('/fonts/Inconsolata-Regular.woff2') format('woff2');
    font-weight: normal;
    font-style: normal;
 }
