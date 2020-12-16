@@ -1,20 +1,20 @@
 @font-face {
   font-family: "playfair_display";
-  src: url('../Minimo/PlayfairDisplay-Regular.ttf') format("truetype"),
-    url('../Minimo/PlayfairDisplay-Regular.woff2') format("woff2");
+  src: url('../Minimo/fonts/PlayfairDisplay-Regular.ttf') format("truetype"),
+    url('../Minimo/fonts/PlayfairDisplay-Regular.woff2') format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "inconsolata";
-  src: url('../Minimo/Inconsolata-Regular.ttf') format("truetype"),
-    url('../Minimo/Inconsolata-Regular.woff2') format("woff2");
+  src: url('../Minimo/fonts/Inconsolata-Regular.ttf') format("truetype"),
+    url('../Minimo/fonts/Inconsolata-Regular.woff2') format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'ubuntu-light';
-  src: url('../Minimo/Ubuntu-Light.ttf') format("truetype");
+  src: url('../Minimo/fonts/Ubuntu-Light.ttf') format("truetype");
 }
 * {
   box-sizing: border-box;
