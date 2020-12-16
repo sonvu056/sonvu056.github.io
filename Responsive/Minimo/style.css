@@ -7,14 +7,14 @@
 }
 @font-face {
   font-family: "inconsolata";
-  src: url("Inconsolata-Regular.ttf") format("truetype"),
-    url("Inconsolata-Regular.woff2") format("woff2");
+  src: url('Inconsolata-Regular.ttf') format("truetype"),
+    url('Inconsolata-Regular.woff2') format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "ubuntu-light";
-  src: url("Ubuntu-Light.ttf") format("truetype");
+  font-family: 'ubuntu-light';
+  src: url('Ubuntu-Light.ttf') format("truetype");
 }
 * {
   box-sizing: border-box;
