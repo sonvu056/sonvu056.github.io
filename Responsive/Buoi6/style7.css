@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.top {
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.menu {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: blue;
+}
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+.menu ul li {
+    padding: 0 10px;
+}
+.menu ul li a {
+    color: white;
+}
+.login {
+    padding: 7px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.login ul {
+    display: flex;
+    flex-direction: row;
+}
+.login ul li {
+    padding: 0 7px;
+}
+.login ul li a {
+    color:black;
+}
+.bottom {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 10px 10px 0;
+    display: flex;
+}
+.content-left, .content-right {
+    background-color: blue;
+    border: 1px solid black;
+    height: 100%;
+}
+.content-left {
+    width: 70%;
+    margin-right: 10px;
+}
+.content-right {
+    width: calc(30% - 10px);
+}
+.btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn div {
+    height: 8px;
+    width: 70%;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;   
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-dropdown {
+    width: 100%;
+    padding-bottom: 10px;
+    display: none;
+}
+.menu-item {
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .logo, .menu, .login {
+        display: none;
+    }
+    .top {
+        height: auto;
+        padding-top: 10px;
+        background-color: pink;
+    }
+    .menu-dropdown {
+        display: block;
+    }
+    .menu-dropdown ul li {
+        padding: 10px;
+        border: 1px solid black;
+        margin-top: -1px;
+        text-align: center;
+        background-color: blue;
+    }
+    .menu-dropdown ul li a {
+        color: white;       
+    }
+    .menu-dropdown-top {
+        display: flex;
+        align-items: center;
+    }
+    .logo-dropdown {
+        width: 80px;
+        height: 20px;
+        background-color: rgb(138, 70, 81);
+        border: 1px solid black;
+        margin-left: 20px;
+    }
+    .bottom {
+        flex-direction: column;
+        height: calc(100% - 90px);
+    }
+    .content-left, .content-right {
+        width: 100%;
+    }
+    .content-left {
+        margin: 0;
+        margin-bottom: 10px;
+        height: 50%;
+    }
+    .content-right {
+        height: calc(50% - 10px);
+    }
+}

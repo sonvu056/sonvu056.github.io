@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+}
+html, 
+body {  
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+}
+.top {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.logo {
+    width: 100px;
+    height: 30px;
+    background-color: pink;
+    border: 1px solid black;
+}
+.menu div {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+    width: 70px;
+}
+.menu {
+    display: flex;
+    border: 1px solid black;
+}
+.bottom {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 10px 10px 0;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: blue;
+}
+.btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn div {
+    height: 8px;
+    width: 70%;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;   
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-dropdown {
+    width: 100%;
+    padding-bottom: 10px;
+    display: none;
+}
+.menu-item {
+    width: 100%;
+    margin-top: 20px;
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .top {
+        height: auto;
+        padding-top: 10px;
+        background-color: pink;
+    }
+    .menu-dropdown {
+        display: block;
+    }
+    .menu-dropdown ul li {
+        padding: 10px;
+        border: 1px solid black;
+        margin-top: -1px;
+        text-align: center;
+        background-color: blue;
+    }
+    .menu-dropdown ul li a {
+        color: white;       
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 7</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="logo"></div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="">Menu 1</a>
+          </li>
+          <li>
+            <a href="">Menu 2</a>
+          </li>
+          <li>
+            <a href="">Menu 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="login">
+        <ul>
+          <li>
+            <a href="">Login</a>
+          </li>
+          <li>
+            <a href="">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-dropdown">
+        <div class="menu-dropdown-top">
+          <button class="btn" onclick="dropdown()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+          <div class="logo-dropdown"> </div>
+        </div>
+        <div class="menu-item" id="menu-item-mobi">
+          <ul>
+            <li>
+              <a href="">Menu 1</a>
+            </li>
+            <li>
+              <a href="">Menu 2</a>
+            </li>
+            <li>
+              <a href="">Menu 3</a>
+            </li>
+            <li>
+              <a href="">Login</a>
+            </li>
+            <li>
+              <a href="">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="content-left"></div>
+      <div class="content-right"></div>
+    </div>
+    <script>
+      function dropdown() {
+        if (document.getElementById("menu-item-mobi").style.display == "none") {
+          document.getElementById("menu-item-mobi").style.display = "block";
+        } else {
+          document.getElementById("menu-item-mobi").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

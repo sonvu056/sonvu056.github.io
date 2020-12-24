@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 6</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="top">
+        <div class="logo"></div>
+        <div class="menu">
+            <div>Menu 1</div>
+            <div>Menu 2</div>
+            <div>Menu 3</div>
+        </div>
+        <div class="menu-dropdown">
+            <button class="btn" onclick="dropdown()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="menu-item" id="menu-item-mobi">
+                <ul>
+                    <li>
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="">Menu 1</a>
+                    </li>
+                    <li>
+                        <a href="">Menu 2</a>
+                    </li>
+                    <li>
+                        <a href="">Menu 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="content"></div>
+    </div>
+    <script>
+        function dropdown() {
+            if (document.getElementById("menu-item-mobi").style.display == "none") 
+            {
+                document.getElementById("menu-item-mobi").style.display = "block";
+            } else {
+                document.getElementById("menu-item-mobi").style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
