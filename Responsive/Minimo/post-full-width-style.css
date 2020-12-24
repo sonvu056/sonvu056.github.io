@@ -1,0 +1,120 @@
+.inconsolata {
+    font-family: 'inconsolata';
+}
+.main-content {
+    padding-bottom: 0;
+}
+img {
+    width: 100%;
+    padding-top: 60px;
+}
+.note {
+    width: 90%;
+    margin: 40px auto;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px 0 70px;
+}
+.social ul li {
+    padding-left: 10px;
+}
+.other {
+    height: 435px;
+    background-color: #f0f0f0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.other-content {
+    max-width: 900px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;   
+}
+.other-post {
+    display: flex;
+    justify-content: space-between;
+}
+.post {
+    width: 30%;  
+}
+.comment-section {
+    margin-top: 435px;
+    padding-top: 60px;
+}
+.comment {
+    display: flex;
+    padding-top: 40px;
+}
+.avatar {
+    width: 70px;
+}
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.user-info img {
+    padding-top: 0;
+    width: 100%;
+}
+.data {
+    width: calc(100% - 110px);
+}
+.data p {
+    margin: 0;
+}
+.reply {
+    padding-top: 20px;
+    cursor: pointer;
+}
+.your-comment {
+    width: 100%;
+}
+.data input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid #626262;
+}
+.connect {
+    display: flex;
+    justify-content: flex-end;
+}
+.connect ul li {
+    padding-left: 20px;
+}
+.connect ul li:nth-child(1) {
+    padding-right: 20px;
+}
+@media screen and (max-width: 768px) {
+    .other-content {
+        padding-top: 20px;
+        height: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slider {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+    }
+    .slide {
+        flex-shrink: 0;
+        padding-left: 20px;
+    }
+    .slide:nth-child(1) {
+        margin-left: -20px;
+    }
+    .slide a img {
+        padding-top: 0;
+        height: calc(100% - 56px);
+        width: auto;
+    }
+}
