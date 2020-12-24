@@ -5,6 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
 /* Class */
 .container,
 .container-fluid {
@@ -211,60 +220,183 @@ header {
 }
 /* About */
 .about {
-    position: relative;
+  position: relative;
 }
-.oval-left  {
-    position: absolute;
-    top: 0;
+.oval-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.oval-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .about-me {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 280px;
-    margin-bottom: 280px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 280px;
+  margin-bottom: 280px;
 }
-.about-me-title h3{
-    font-size: 34px;
-    line-height: 39.88px;
-    color: #1C1F28;
-    margin-bottom: 12px;
+.about-me-title h3 {
+  font-size: 34px;
+  line-height: 39.88px;
+  color: #1c1f28;
+  margin-bottom: 12px;
 }
 .about-me-title p {
-    font-size: 18px;
-    line-height: 24px;
-    color:#7A7C82;
-    margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #7a7c82;
+  margin-bottom: 80px;
 }
 .about-item {
-    width: 30%;
-    margin-bottom: 60px;
+  width: 30%;
+  margin-bottom: 60px;
 }
 .about-item h4 {
-    font-size: 24px;
-    line-height: 28px;
-    color: #1C1F28;
-    padding-top: 30px;
-    padding-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1c1f28;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .about-item p {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
-    color: #A1A4AC;
-    padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #a1a4ac;
+  padding-bottom: 30px;
 }
 .learn-more-btn {
-    width: 206px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1C1F28;
-    background: #FFFFFF;
-    border: 1px solid #1C1F28;
-    border-radius: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  width: 206px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1c1f28;
+  background: #ffffff;
+  border: 1px solid #1c1f28;
+  border-radius: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.comment {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 420px;
+}
+.carousel-item {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.carousel-item h4 {
+  font-size: 34px;
+  line-height: 40px;
+  color: #1c1f28;
+}
+.carousel-content {
+  padding-left: 255px;
+  padding-right: 255px;
+}
+.carousel-item p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #a1a4ac;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.user-info p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #323643;
+  padding-left: 30px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+/* Footer */
+footer {
+  background-image: url("../imgs/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer-top {
+  background: #ffffff;
+  box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  border-top: 5px solid #14b45c;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+}
+.footer-top-content {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.footer-top-content h4 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #1c1f28;
+}
+.footer-top p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #a1a4ac;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.store {
+  justify-content: center;
+}
+.store a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bottom-menu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom-logo {
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+.menu-item h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.menu-item ul li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.menu-item ul li a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+.social {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.social ul li {
+  padding-left: 20px;
 }
 @media screen and (max-width: 576px) {
   .top {

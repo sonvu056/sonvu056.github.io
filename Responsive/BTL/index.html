@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>beepb.io</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -258,6 +256,7 @@
 
       <section class="about container-fluid">
         <img src="./imgs/oval-left.png" class="oval-left img-fluid" alt="" />
+        <img src="./imgs/oval-right.png" class="oval-right img-fluid" alt="" />
         <div class="about-me container text-center">
           <div class="about-me-title">
             <h3>For every kind of Business!</h3>
@@ -296,29 +295,214 @@
           </div>
         </div>
         <div class="comment">
-          <div class="comment-section">
-            <div>
-              <img src="./imgs/about-img-1.png" alt="">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item text-center active">
+                <h4>Our users love the app!</h4>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor.
+                </p>
+                <div class="user-id d-flex flex-row justify-content-center">
+                  <div class="user-img">
+                    <img src="./imgs/user-img.png" class="img-fluid" alt="" />
+                  </div>
+                  <div
+                    class="user-info d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <p>Kimberly Franklin</p>
+                    <img src="./imgs/star.png" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <h4>Our users love the app!</h4>
+                <p>
+                  Donec facilisis tortor ut augue lacinia, at viverra est
+                  semper. Sed sapien metus, scelerisque nec pharetra id, tempor
+                  a tortor.
+                </p>
+                <div class="user-id d-flex flex-row justify-content-center">
+                  <div class="user-img">
+                    <img src="./imgs/user-img.png" class="img-fluid" alt="" />
+                  </div>
+                  <div
+                    class="user-info d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <p>Kimberly Franklin</p>
+                    <img src="./imgs/star.png" class="img-fluid" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <img src="./imgs/about-img-2.png" alt="">
-            </div>
-            <div>
-              <img src="./imgs/about-img-3.png" alt="">
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </a>
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="footer-top text-center d-flex">
+          <div class="footer-top-content">
+            <h4>Get started with the mobile app!</h4>
+            <p>
+              Donec facilisis tortor ut augue lacinia, at viverra est semper.
+              Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.
+            </p>
+            <div class="store d-flex">
+              <a href="#">
+                <img src="./imgs/google-play.png" alt="" />
+              </a>
+              <a href="#">
+                <img src="./imgs/app-store.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center bottom-logo">
+          <a href="#">
+            <img src="./imgs/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="bottom-menu d-flex justify-content-around">
+          <div class="menu-item">
+            <h4>FEATURES</h4>
+            <ul>
+              <li>
+                <a href="#">Tour</a>
+              </li>
+              <li>
+                <a href="#">Analytics</a>
+              </li>
+              <li>
+                <a href="#">Security</a>
+              </li>
+              <li>
+                <a href="#">Intelligent AI</a>
+              </li>
+              <li>
+                <a href="#">SmartEngine</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <h4>BENEFITS</h4>
+            <ul>
+              <li>
+                <a href="#">Management</a>
+              </li>
+              <li>
+                <a href="#">Time Saving</a>
+              </li>
+              <li>
+                <a href="#">Longterm Gains</a>
+              </li>
+              <li>
+                <a href="#">Forecasting</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <h4>DOWNLOADS</h4>
+            <ul>
+              <li>
+                <a href="#">Android (Google Play)</a>
+              </li>
+              <li>
+                <a href="#">Apple (App Store)</a>
+              </li>
+              <li>
+                <a href="#">ChromeOS (Coming soon)</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <h4>RESOURCES</h4>
+            <ul>
+              <li>
+                <a href="#">API</a>
+              </li>
+              <li>
+                <a href="#">Mobile SDK</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Videos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-item">
+            <h4>COMPANY</h4>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">Press & Media</a>
+              </li>
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social d-flex justify-content-between align-items-center">
+          <p>Freebie designed by Kishore for Project365.design!</p>
+          <ul class="d-flex">
+            <li>
+              <a href="#">
+                <img src="./imgs/fb.png" alt="">
+              </a>
+            </li>
+            <li>
+              <img src="./imgs/twitter.png" alt="">
+            </li>
+            <li>
+              <img src="./imgs/youtube.png" alt="">
+            </li>
+            <li>
+              <img src="./imgs/google-plus.png" alt="">
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./slick/slick.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $('.comment-section').slick({
-      });
-    });
-    </script>
   </body>
 </html>
