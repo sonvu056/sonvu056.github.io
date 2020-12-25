@@ -1,0 +1,111 @@
+.pb-70 {
+    padding-bottom: 70px;
+}
+h3, p {
+    margin: 0;
+}
+.header {
+    padding: 70px 0 100px;
+    max-width: 1063px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content {
+    max-width: 1063px;
+}
+.main-content {
+    max-width: 62.2%;
+    padding-bottom: 70px;
+}
+.content-title {
+    padding-top: 30px;  
+}
+.main-content img {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+.note {
+    margin: 0 auto;
+}
+.social {
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 115px;
+}
+.social ul li {
+    padding-left: 20px;
+}
+.sidebar {
+    max-width: 26.5%;
+    margin-left: 5.5%;
+}
+.sidebar ul li {
+    padding-right: 15px;
+}
+.sidebar ul li a:hover {
+    color:black;
+}
+.name {
+    color:black;
+    margin-bottom: 15px;
+}
+.top-post {
+    margin-top: 75px;
+}
+.top-post > p {
+    margin-bottom: 35px;
+}
+.top-post ul > li{
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 20px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.about-me {
+    margin-bottom: 25px;
+}
+.about-me > h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.banner {
+    max-width: 250px;
+    margin: 0;
+}
+.post > a > p{
+    padding-top: 25px;
+    padding-bottom: 90px;
+}
+@media screen and (max-width: 576px) {
+    .content {
+        flex-direction: column !important;
+        padding: 0 20px;
+    }
+    .main-content, .sidebar {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-post {
+        text-align: center;
+    }
+    .top-post ul li {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .post > a > p{
+    padding-top: 25px;
+    padding-bottom: 25px;   
+    }
+    .side-media ul {
+        display: flex;
+        justify-content:flex-end
+    }
+}

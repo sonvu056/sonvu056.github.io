@@ -1,20 +1,20 @@
 @font-face {
   font-family: "playfair_display";
-  src: url('./fonts/PlayfairDisplay-Regular.ttf') format("truetype"),
-    url('./fonts/PlayfairDisplay-Regular.woff2') format("woff2");
+  src: url("./fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "inconsolata";
-  src: url('./fonts/Inconsolata-Regular.ttf') format("truetype"),
-  url('./fonts/Inconsolata-Regular.woff2') format('woff2');
+  src: url("./fonts/Inconsolata-Regular.ttf") format("truetype"),
+    url("./fonts/Inconsolata-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ubuntu-light';
-  src: url('./fonts/Ubuntu-Light.ttf') format("truetype");
+  font-family: "ubuntu-light";
+  src: url("./fonts/Ubuntu-Light.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -70,7 +70,7 @@ h3 {
   display: flex;
 }
 .iconsolata {
-    font-family: 'inconsolata';
+  font-family: "inconsolata";
 }
 /* Container */
 .container {
@@ -143,7 +143,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   padding-top: 45px;
-  padding-bottom: 75px; 
+  padding-bottom: 75px;
   position: absolute;
   left: 0;
   right: 0;
@@ -306,5 +306,8 @@ h3 {
   }
   .form input {
     width: auto;
+  }
+  .post {
+    width: 100%;
   }
 }
