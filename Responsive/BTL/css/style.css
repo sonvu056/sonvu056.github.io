@@ -18,6 +18,7 @@ ul li a {
 .container,
 .container-fluid {
   padding: 0;
+  margin: 0;
 }
 p {
   margin: 0;
@@ -87,9 +88,6 @@ header {
 .bottom-image {
   width: 100%;
 }
-.bottom-content-text {
-  padding-top: 200px;
-}
 .bottom-content-text div p {
   font-weight: 300;
   font-size: 40px;
@@ -104,8 +102,10 @@ header {
 }
 .bottom-button > .btn {
   width: 210px;
-  margin-right: 30px;
   height: 50px;
+}
+.bottom-button > .btn:nth-child(1) {
+  margin-right: 30px;
 }
 .btn-left {
   background: #14b45c;
@@ -132,6 +132,8 @@ header {
 .feature-wrapper {
   color: #1c1f28;
   margin-bottom: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .feature-wrapper > .title {
   font-size: 34px;
@@ -336,7 +338,7 @@ footer {
   transform: translateY(-50%);
 }
 .footer-top-content {
-  max-width: 40%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 92px;
@@ -398,15 +400,48 @@ footer {
 .social ul li {
   padding-left: 20px;
 }
-@media screen and (max-width: 576px) {
-  .top {
+@media screen and (max-width: 1200px) {
+  .header,
+  .feature-wrapper,
+  .product-detail {
+    width: 90%;
+  }
+  .bottom-content {
+    margin-right: 60px;
+  }
+  .footer-top-content {
+    width: 60%;
+  }
+  .store {
+    justify-content: space-evenly;
+  }
+  .feature-wrapper {
+    margin-bottom: 50px;
+  }
+  .feature-content {
+    padding: 60px 30px 50px;
+  }
+  .bottom-content {
+    margin-right: 60px;
+  }
+  .footer-top-content {
+    width: 60%;
+  }
+  .store {
+    justify-content: space-evenly;
+  }
+  .product-detail {
+    padding-top: 50px;
     width: 100%;
-    padding: 20px;
   }
-  .logo {
-    align-self: start;
+  .about-me {
+    padding-top: 100px;
+    margin-bottom: 150px;
   }
-  .navbar-toggler-icon {
-    display: flex;
+  .footer-top-content {
+    padding: 50px 0 ;
+    width: 90%;
   }
+}
+@media screen and (max-width: 992px) {
 }
