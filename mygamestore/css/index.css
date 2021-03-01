@@ -170,13 +170,13 @@
   margin-left: 0;
 }
 .main-content-item-1 {
-  background-image: url(/img/content-img-1.jpg);
+  background-image: url(../img/content-img-1.jpg);
 }
 .main-content-item-2 {
-  background-image: url(/img/content-img-2.jpg);
+  background-image: url(../img/content-img-2.jpg);
 }
 .main-content-item-3 {
-  background-image: url(/img/content-img-3.jpg);
+  background-image: url(../img/content-img-3.jpg);
 }
 .main-content-item > .inner {
   padding: 45px;
