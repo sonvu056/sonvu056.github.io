@@ -171,6 +171,7 @@
 }
 .main-content-item-1 {
   background-image: url(../img/content-img-1.jpg);
+  background-color: black;
 }
 .main-content-item-2 {
   background-image: url(../img/content-img-2.jpg);
