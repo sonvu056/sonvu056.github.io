@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./library/bootstrap-5.0.0-beta1-dist/css/bootstrap.css"
+    />
+    <title>Home</title>
+    <script
+      src="https://kit.fontawesome.com/d362bd76db.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid main-header d-flex justify-content-between">
+        <div class="logo">
+          <a href="index.html" class="site-logo" title="Mygames">
+            <img src="./img/logo.png" alt="Mygames" />
+          </a>
+        </div>
+        <div class="contents">
+          <div class="contents-top d-flex align-items-center">
+            <form class="search d-flex align-items-center">
+              <input type="text" id="input_search" name="search" autocomplete="off"/>
+              <button type="button" onclick="input_display()"><i class="fa fa-search"></i></button>
+            </form>
+            <ul class="social-links" d-flex align-items-center>
+              <li>
+                <a href="#" class="facebook" title="Facebook" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="twitter" title="Twitter" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="google-plus"
+                  title="Google Plus"
+                  target="_blank"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="youtube" title="YouTube" target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="instagram" title="Instagram" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="twitch" title="Twitch" target="_blank"
+                  ><i class="fab fa-twitch"></i
+                ></a>
+              </li>
+            </ul>
+            <div class="user-box d-flex align-items-center">
+              <a class="login-popup" title="Login">Login</a>
+              <a class="signup-popup" title="Sign Up">Sign Up</a>
+            </div>
+            <a href="" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+          <nav class="main-navbar d-flex justify-content-end">
+            <ul class="navbar-menu">
+              <li class="nav-item"><a href="index.html">Trang chủ</a></li>
+              <li class="nav-item"><a href="#">Sản phẩm</a></li>
+              <li class="nav-item"><a href="#">About us</a></li>
+              <li class="nav-item"><a href="#">Blog</a></li>
+              <li class="nav-item"><a href="#">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="container-fluid slider">
+          <div class="row main-row"></div>
+            <div
+              id="myCarousel"
+              class="carousel slide carousel-fade"
+              data-ride="carousel"
+            >
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/aco-slider.jpg" alt="tw3-slider" />
+                  <div class="carousel-caption">
+                    <ul class="game-details d-flex justify-content-center">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="">Origin</a>
+                          </li>
+                          <li>
+                            <a href="">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gerne d-flex align-items-center">
+                        <i class="fas fa-tags"></i>
+                        <ul>
+                          <li>
+                            <a href="">Hành động</a>
+                          </li>
+                          <li>
+                            <a href="">Phiêu lưu</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="title">ASSASSIN’S CREED: ORIGINS</div>
+                    <div class="text">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet dolore magna aliquam erat
+                      volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                      exerci tation ullamcorper suscipit.
+                    </div>
+                    <div class="button d-flex justify-content-center">
+                      <div class="slider-button button-style">
+                        <a href="">Chi tiết</a>
+                      </div>
+                      <div class="slider-button button-style">
+                        <a href="">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/tw3-slider.jpg" alt="aco-slider" />
+                  <div class="carousel-caption">
+                    <ul class="game-details d-flex justify-content-center">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="">Playstation</a>
+                          </li>
+                          <li>
+                            <a href="">Steam</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gerne d-flex align-items-center">
+                        <i class="fas fa-tags"></i>
+                        <ul>
+                          <li>
+                            <a href="">Hành động</a>
+                          </li>
+                          <li>
+                            <a href="">Phiêu lưu</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="title">THE WITCHER 3</div>
+                    <div class="text">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet dolore magna aliquam erat
+                      volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                      exerci tation ullamcorper suscipit.
+                    </div>
+                    <div class="button d-flex justify-content-center">
+                      <div class="button-style">
+                        <a href="">Chi tiết</a>
+                      </div>
+                      <div class="button-style">
+                        <a href="">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <img
+                    src="img/cyberpunk2077-slider.jpg"
+                    alt="cyberpunk2077-slider"
+                  />
+                  <div class="carousel-caption">
+                    <ul class="game-details d-flex justify-content-center">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="">Playstation</a>
+                          </li>
+                          <li>
+                            <a href="">Steam</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="gerne d-flex align-items-center">
+                        <i class="fas fa-tags"></i>
+                        <ul>
+                          <li>
+                            <a href="">Hành động</a>
+                          </li>
+                          <li>
+                            <a href="">Phiêu lưu</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="title">CYBERPUNK 2077</div>
+                    <div class="text">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet dolore magna aliquam erat
+                      volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                      exerci tation ullamcorper suscipit.
+                    </div>
+                    <div class="button d-flex justify-content-center">
+                      <div class="button-style">
+                        <a href="">Chi tiết</a>
+                      </div>
+                      <div class="button-style">
+                        <a href="">Mua ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container main-content d-flex">
+          <div class="main-content-item main-content-item-1">
+            <div class="inner">
+              <div class="content-title uppercase">Sản phẩm</div>
+              <div class="name uppercase">Mygame</div>
+              <div class="text">
+                Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              </div>
+              <div class="button-style-1 uppercase d-flex">
+                <a href="">Sản phẩm</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-item main-content-item-2">
+            <div class="inner">
+              <div class="content-title uppercase">Đội ngũ phát triển</div>
+              <div class="name uppercase">Mygame</div>
+              <div class="text">
+                Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              </div>
+              <div class="button-style-1 uppercase d-flex">
+                <a href="">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="main-content-item main-content-item-3">
+            <div class="inner">
+              <div class="content-title uppercase">Tài liệu & Hướng dẫn</div>
+              <div class="name uppercase">Về chúng tôi</div>
+              <div class="text">
+                Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              </div>
+              <div class="button-style-1 uppercase d-flex">
+                <a href="">Liên hệ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container categorized-games">
+          <ul
+            class="nav categorized-games-tab d-flex justify-content-center"
+            id="games-platform"
+            role="tablist"
+          >
+            <li class="button-style-2 platform-btn active">
+              <a data-toggle="tab" href="#categorized-all" role="tab">Tất cả</a>
+            </li>
+            <li class="button-style-2 platform-btn">
+              <a data-toggle="tab" href="#categorized-origin" role="tab"
+                >Origin</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content categorized-games-tab-content">
+            <div role="tabpanel" class="tab-pane active" id="categorized-all">
+              <div class="game-list d-flex flex-wrap justify-content-between">
+                <div class="game">
+                  <div class="poster">
+                    <a href="" title="Dead Space 3">
+                      <img src="./img/item1.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Phiêu lưu</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">Dead space 3</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+                <div class="game">
+                  <div class="poster">
+                    <a href="" title="Dead Space 3">
+                      <img src="./img/item1.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Phiêu lưu</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">Dead space 3</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+                <div class="game">
+                  <div class="poster">
+                    <a href="" title="Dead Space 3">
+                      <img src="./img/item1.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Phiêu lưu</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">Dead space 3</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+                <div class="game">
+                  <div class="poster">
+                    <a href="" title="Dead Space 3">
+                      <img src="./img/item1.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Phiêu lưu</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">Dead space 3</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-style-2 game-list-button d-flex justify-content-center uppercase">
+                <a href="">Tất cả trò chơi</a>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="categorized-origin">
+              <div class="game-list d-flex flex-wrap">
+                <div class="game">
+                  <div class="poster">
+                    <a href="" title="Call of Duty">
+                      <img src="./img/item2.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Phiêu lưu</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">Call of Duty</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-style-2 game-list-button d-flex justify-content-center uppercase">
+                <a href="">Tất cả trò chơi Origin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid game-search">
+          <form action="" method="get">
+            <div class="container game-search-wrapper">
+              <div class="inner-item d-flex justify-content-between align-items-center">
+                <div class="item game-title uppercase">Mygames</div>
+                <div class="item game-keyword">
+                <input type="text" name="keyword" placeholder="Từ khóa" autocomplete="off">
+              </div>
+              <div class="item game-platform">
+                <select class="form-select" aria-label="Default select example" p>
+                  <option class="select-option" selected>Nền tảng</option>
+                  <option class="select-option" value="1">Mac OS X</option>
+                  <option class="select-option" value="2">Microsoft Windows</option>
+                  <option class="select-option" value="3">Origin</option>
+                  <option class="select-option" value="4">Playstation 4</option>
+                  <option class="select-option" value="5">Steam</option>
+                  <option class="select-option" value="6">Uplay</option>
+                  <option class="select-option" value="7">Xbox One</option>
+                </select>
+              </div>
+              <div class="item game-gerne">
+                <select class="form-select" aria-label="Default select example" p>
+                  <option class="select-option" selected>Thể loại</option>
+                  <option class="select-option" value="1">Hành động</option>
+                  <option class="select-option" value="2">Phiêu lưu</option>
+                  <option class="select-option" value="3">FPS</option>
+                  <option class="select-option" value="4">Đua xe</option>
+                  <option class="select-option" value="5">Nhập vai</option>
+                  <option class="select-option" value="6">Giả lập</option>
+                  <option class="select-option" value="7">Thể thao</option>
+                  <option class="select-option" value="8">Chiến thuật</option>
+                  <option class="select-option" value="9">Thẻ bài</option>
+                </select>
+              </div>
+              <div class="item game-language">
+                <select class="form-select" aria-label="Default select example" p>
+                  <option class="select-option" selected>Ngôn ngữ</option>
+                  <option class="select-option" value="1">Tiếng Anh</option>
+                  <option class="select-option" value="2">Tiếng Đức</option>
+                  <option class="select-option" value="3">Tiếng Pháp</option>
+                  <option class="select-option" value="4">Tiếng Nga</option>
+                  <option class="select-option" value="5">Tiếng Việt</option>
+                  <option class="select-option" value="6">Tiếng Nhật</option>
+                </select>
+              </div> 
+              <div class="item submit">
+                <button type="submit">Tìm kiếm</button>
+              </div>   
+            </div>
+              </div>
+              
+          </form>
+        </div>
+        <div class="container-fluid other-content">
+          <div class="other-content-inner">
+            <div class="inner-text">
+              <div class="text-title">
+                <p class="white">Total war: <br>Three Kingdoms </br> </p>
+                <p class="yellow">ra mắt!</p>
+              </div>
+              <div class="text-content white">
+                Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat ac tincidunt vitae semper. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ante metus dictum at tempor fames ac
+              </div>
+              <div class="button d-flex">
+                <div class="button-style-1 uppercase btn btn-left">
+                  <a href="">Xem thêm</a>
+                </div>
+                <div class="button-style-1 uppercase btn btn-right">
+                  <a href="">Mua ngay</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container featured-game">
+          <div class="section-title uppercase">Trò chơi <span>nổi bật</span></div>
+          <div class="featured-game-content">
+            <div class="feature-game-detail d-flex flex-wrap justify-content-between">              
+              <div class="game featured-game-item">                 
+                  <div class="poster">
+                    <a href=""><img src="./img/item1.jpg" alt="Dead Space 3" /></a>
+                    <div class="poster-inner">
+                      <div class="game-title uppercase white">Dead space 3</div>
+                      <div class="featured-game-info d-flex align-items-center uppercase">
+                        <ul>                        
+                          <i class="fas fa-tv"></i>
+                            <li>Steam</li>
+                            <li>Playstation 4</li>
+                        </ul>
+                        <ul>
+                          <i class="fas fa-tags"></i>
+                          <li>Phiêu lưu</li>
+                          <li>FPS</li>
+                        </ul>                      
+                      </div>                    
+                    </div>
+                    <div class="poster-hover game-title">Dead space 3</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid blog-news-wrapper">
+          <div class="section-title uppercase">Bài viết <span>& Tin tức</span></div>
+          <div class="container blog-news">
+            <div class="blog-news-item">
+              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+              <div class="blog-news-title">
+                <a href="">Trailer mới ra mắt!</a>
+              </div>            
+              <div class="blog-news-content">Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus</div>
+              <ul class="d-flex">
+                <li class="blog-news-author">
+                  <a href="">
+                    <img src="./img/avatar-icon.png" alt="">
+                    <span>John Doe</span>
+                  </a>
+                </li>
+                <li class="type">
+                  <i class="fas fa-folder-open"></i>
+                  <a href="">Tin tức</a>
+                </li>
+                <li class="date">
+                  <i class="fas fa-clock"></i>
+                  <span>26/3/2020</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid other-content about-us">
+          <div class="other-content-inner about-us-inner d-flex align-items-center">
+            <div class="inner-img">
+              <img src="./img/about-img.jpg" alt="">
+            </div>
+            <div class="inner-text">
+              <div class="text-title">
+                <p class="white">Về chúng tôi</p>
+                <p class="yellow">Mygames</p>
+              </div>
+              <div class="text-content white">
+                Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat ac tincidunt vitae semper. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ante metus dictum at tempor fames ac
+              </div>
+              <div class="button d-flex">
+                <div class="button-style-1 uppercase btn btn-left">
+                  <a href="">Đọc thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script>
+      function input_display() {
+        if(document.getElementById("input_search").style.visibility == "hidden") {
+          document.getElementById("input_search").style.visibility = "visible";
+        } else {
+          document.getElementById("input_search").style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+</html>

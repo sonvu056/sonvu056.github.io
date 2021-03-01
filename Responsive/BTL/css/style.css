@@ -90,8 +90,8 @@ header {
 }
 .bottom-content-text div p {
   font-weight: 300;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
   margin: 0;
 }
 .info {
