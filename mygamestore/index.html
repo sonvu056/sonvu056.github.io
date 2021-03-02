@@ -24,72 +24,74 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container-fluid main-header d-flex justify-content-between">
-        <div class="logo">
+    <header class="header container-fluid">
+      <div class="container">
+        <div class="d-flex justify-content-between main-header">
+          <div class="logo">
           <a href="index.html" class="site-logo" title="Mygames">
             <img src="./img/logo.png" alt="Mygames" />
           </a>
-        </div>
-        <div class="contents">
-          <div class="contents-top d-flex align-items-center">
-            <form class="search d-flex align-items-center">
-              <input type="text" id="input_search" name="search" autocomplete="off"/>
-              <button type="button" onclick="input_display()"><i class="fa fa-search"></i></button>
-            </form>
-            <ul class="social-links" d-flex align-items-center>
-              <li>
-                <a href="#" class="facebook" title="Facebook" target="_blank"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="twitter" title="Twitter" target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="google-plus"
-                  title="Google Plus"
-                  target="_blank"
-                  ><i class="fab fa-google-plus-g"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="youtube" title="YouTube" target="_blank"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="instagram" title="Instagram" target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="twitch" title="Twitch" target="_blank"
-                  ><i class="fab fa-twitch"></i
-                ></a>
-              </li>
-            </ul>
-            <div class="user-box d-flex align-items-center">
-              <a class="login-popup" title="Login">Login</a>
-              <a class="signup-popup" title="Sign Up">Sign Up</a>
-            </div>
-            <a href="" class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-            </a>
           </div>
-          <nav class="main-navbar d-flex justify-content-end">
-            <ul class="navbar-menu">
-              <li class="nav-item"><a href="index.html">Trang chủ</a></li>
-              <li class="nav-item"><a href="#">Sản phẩm</a></li>
-              <li class="nav-item"><a href="#">About us</a></li>
-              <li class="nav-item"><a href="#">Blog</a></li>
-              <li class="nav-item"><a href="#">Liên hệ</a></li>
-            </ul>
-          </nav>
+          <div class="contents">
+            <div class="contents-top d-flex align-items-center">
+              <form class="search d-flex align-items-center">
+                <input type="text" id="input_search" name="search" autocomplete="off"/>
+                <button type="button" onclick="input_display()"><i class="fa fa-search"></i></button>
+              </form>
+              <ul class="social-links" d-flex align-items-center>
+                <li>
+                  <a href="#" class="facebook" title="Facebook" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="twitter" title="Twitter" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="google-plus"
+                    title="Google Plus"
+                    target="_blank"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="youtube" title="YouTube" target="_blank"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="instagram" title="Instagram" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="twitch" title="Twitch" target="_blank"
+                    ><i class="fab fa-twitch"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="user-box d-flex align-items-center">
+                <a class="login-popup" title="Login">Login</a>
+                <a class="signup-popup" title="Sign Up">Sign Up</a>
+              </div>
+              <a href="" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+            <nav class="main-navbar d-flex justify-content-end">
+              <ul class="navbar-menu">
+                <li class="nav-item"><a href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a href="#">About us</a></li>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Liên hệ</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -101,7 +103,7 @@
             <div
               id="myCarousel"
               class="carousel slide carousel-fade"
-              data-ride="carousel"
+              data-interval="false"
             >
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -255,9 +257,10 @@
             </div>
           </div>
         </div>
-        <div class="container main-content d-flex">
-          <div class="main-content-item main-content-item-1">
-            <div class="inner">
+        <div class="container">
+          <div class="main-content d-flex flex-wrap">
+            <div class="main-content-item col-sm-12 col-md-4">
+            <div class="inner main-content-item-1">
               <div class="content-title uppercase">Sản phẩm</div>
               <div class="name uppercase">Mygame</div>
               <div class="text">
@@ -268,30 +271,31 @@
                 <a href="">Sản phẩm</a>
               </div>
             </div>
-          </div>
-          <div class="main-content-item main-content-item-2">
-            <div class="inner">
-              <div class="content-title uppercase">Đội ngũ phát triển</div>
-              <div class="name uppercase">Mygame</div>
-              <div class="text">
-                Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna.
-              </div>
-              <div class="button-style-1 uppercase d-flex">
-                <a href="">Đọc thêm</a>
+            </div>
+            <div class="main-content-item col-sm-12 col-md-4">
+              <div class="inner main-content-item-2">
+                <div class="content-title uppercase">Đội ngũ phát triển</div>
+                <div class="name uppercase">Mygame</div>
+                <div class="text">
+                  Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </div>
+                <div class="button-style-1 uppercase d-flex">
+                  <a href="">Đọc thêm</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="main-content-item main-content-item-3">
-            <div class="inner">
-              <div class="content-title uppercase">Tài liệu & Hướng dẫn</div>
-              <div class="name uppercase">Về chúng tôi</div>
-              <div class="text">
-                Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
-                nonummy nibh euismod tincidunt ut laoreet dolore magna.
-              </div>
-              <div class="button-style-1 uppercase d-flex">
-                <a href="">Liên hệ</a>
+            <div class="main-content-item col-sm-12 col-md-4">
+              <div class="inner main-content-item-3">
+                <div class="content-title uppercase">Tài liệu & Hướng dẫn</div>
+                <div class="name uppercase">Về chúng tôi</div>
+                <div class="text">
+                  Lorem ipsum dolor sit am consectetuer adipiscing elit sed diam
+                  nonummy nibh euismod tincidunt ut laoreet dolore magna.
+                </div>
+                <div class="button-style-1 uppercase d-flex">
+                  <a href="">Liên hệ</a>
+                </div>
               </div>
             </div>
           </div>
@@ -314,7 +318,7 @@
           <div class="tab-content categorized-games-tab-content">
             <div role="tabpanel" class="tab-pane active" id="categorized-all">
               <div class="game-list d-flex flex-wrap justify-content-between">
-                <div class="game">
+                <div class="game col-sm-6 col-md-4 col-lg-3">
                   <div class="poster">
                     <a href="" title="Dead Space 3">
                       <img src="./img/item1.jpg" alt="Dead Space 3" />
@@ -354,7 +358,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="game">
+                <div class="game col-sm-6 col-md-4 col-lg-3">
                   <div class="poster">
                     <a href="" title="Dead Space 3">
                       <img src="./img/item1.jpg" alt="Dead Space 3" />
@@ -394,7 +398,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="game">
+                <div class="game col-sm-6 col-md-4 col-lg-3">
                   <div class="poster">
                     <a href="" title="Dead Space 3">
                       <img src="./img/item1.jpg" alt="Dead Space 3" />
@@ -434,7 +438,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="game">
+                <div class="game col-sm-6 col-md-4 col-lg-3">
                   <div class="poster">
                     <a href="" title="Dead Space 3">
                       <img src="./img/item1.jpg" alt="Dead Space 3" />
@@ -627,34 +631,124 @@
                     <div class="poster-hover game-title">Dead space 3</div>
                   </div>
               </div>
+              <div class="game featured-game-item">                 
+                  <div class="poster">
+                    <a href=""><img src="./img/item1.jpg" alt="Dead Space 3" /></a>
+                    <div class="poster-inner">
+                      <div class="game-title uppercase white">Dead space 3</div>
+                      <div class="featured-game-info d-flex align-items-center uppercase">
+                        <ul>                        
+                          <i class="fas fa-tv"></i>
+                            <li>Steam</li>
+                            <li>Playstation 4</li>
+                        </ul>
+                        <ul>
+                          <i class="fas fa-tags"></i>
+                          <li>Phiêu lưu</li>
+                          <li>FPS</li>
+                        </ul>                      
+                      </div>                    
+                    </div>
+                    <div class="poster-hover game-title">Dead space 3</div>
+                  </div>
+              </div>
+              <div class="game featured-game-item">                 
+                  <div class="poster">
+                    <a href=""><img src="./img/item1.jpg" alt="Dead Space 3" /></a>
+                    <div class="poster-inner">
+                      <div class="game-title uppercase white">Dead space 3</div>
+                      <div class="featured-game-info d-flex align-items-center uppercase">
+                        <ul>                        
+                          <i class="fas fa-tv"></i>
+                            <li>Steam</li>
+                            <li>Playstation 4</li>
+                        </ul>
+                        <ul>
+                          <i class="fas fa-tags"></i>
+                          <li>Phiêu lưu</li>
+                          <li>FPS</li>
+                        </ul>                      
+                      </div>                    
+                    </div>
+                    <div class="poster-hover game-title">Dead space 3</div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="container-fluid blog-news-wrapper">
           <div class="section-title uppercase">Bài viết <span>& Tin tức</span></div>
-          <div class="container blog-news">
-            <div class="blog-news-item">
-              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
-              <div class="blog-news-title">
-                <a href="">Trailer mới ra mắt!</a>
-              </div>            
-              <div class="blog-news-content">Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus</div>
-              <ul class="d-flex">
-                <li class="blog-news-author">
-                  <a href="">
-                    <img src="./img/avatar-icon.png" alt="">
-                    <span>John Doe</span>
-                  </a>
-                </li>
-                <li class="type">
-                  <i class="fas fa-folder-open"></i>
-                  <a href="">Tin tức</a>
-                </li>
-                <li class="date">
-                  <i class="fas fa-clock"></i>
-                  <span>26/3/2020</span>
-                </li>
-              </ul>
+          <div class="container">
+            <div class="blog-news d-flex flex-wrap justify-content-between">
+              <div class="blog-news-item">
+                <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+                <div class="blog-news-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>            
+                <div class="blog-news-content">Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus</div>
+                <ul class="d-flex">
+                  <li class="blog-news-author">
+                    <a href="">
+                      <img src="./img/avatar-icon.png" alt="">
+                      <span>John Doe</span>
+                    </a>
+                  </li>
+                  <li class="type">
+                    <i class="fas fa-folder-open"></i>
+                    <a href="">Tin tức</a>
+                  </li>
+                  <li class="date">
+                    <i class="fas fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog-news-item">
+                <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+                <div class="blog-news-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>            
+                <div class="blog-news-content">Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus</div>
+                <ul class="d-flex">
+                  <li class="blog-news-author">
+                    <a href="">
+                      <img src="./img/avatar-icon.png" alt="">
+                      <span>John Doe</span>
+                    </a>
+                  </li>
+                  <li class="type">
+                    <i class="fas fa-folder-open"></i>
+                    <a href="">Tin tức</a>
+                  </li>
+                  <li class="date">
+                    <i class="fas fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="blog-news-item">
+                <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+                <div class="blog-news-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>            
+                <div class="blog-news-content">Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus</div>
+                <ul class="d-flex">
+                  <li class="blog-news-author">
+                    <a href="">
+                      <img src="./img/avatar-icon.png" alt="">
+                      <span>John Doe</span>
+                    </a>
+                  </li>
+                  <li class="type">
+                    <i class="fas fa-folder-open"></i>
+                    <a href="">Tin tức</a>
+                  </li>
+                  <li class="date">
+                    <i class="fas fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -679,9 +773,294 @@
             </div>
           </div>
         </div>
+        <div class="container game-shop">
+          <div class="section-title uppercase">Sản phẩm <span>khác</span>
+          </div>
+          <div class="game-shop-inner d-flex justify-content-between">
+            <div class="game-shop-item">
+            <a href="">
+              <img src="./img/game-shop-1.jpg" alt="">
+            </a>
+            <a href="" class="game-shop-title uppercase">game pack dvd</a>
+            <div class="game-shop-price">£56.00</div>
+            </div>
+            <div class="game-shop-item">
+            <a href="">
+              <img src="./img/game-shop-1.jpg" alt="">
+            </a>
+            <a href="" class="game-shop-title uppercase">game pack dvd</a>
+            <div class="game-shop-price">£56.00</div>
+            </div>
+            <div class="game-shop-item">
+            <a href="">
+              <img src="./img/game-shop-1.jpg" alt="">
+            </a>
+            <a href="" class="game-shop-title uppercase">game pack dvd</a>
+            <div class="game-shop-price">£56.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid newsletter">
+          <form action="" method="get" class="newsletter-inner">
+            <div class="container newsletter-wrapper d-flex justify-content-between align-items-center">
+              <div class="item newsletter-title uppercase">newsletter</div>
+              <div class="item newsletter-input">
+                <input type="text" name="adress" placeholder="Địa chỉ email của bạn" autocomplete="off">
+              </div> 
+              <div class="item newsletter-input">
+                <input type="text" name="last-name" placeholder="Họ" autocomplete="off">
+              </div>           
+              <div class="item newsletter-input">
+                <input type="text" name="first-name" placeholder="Tên" autocomplete="off">
+              </div>
+              <div class="item submit">
+                <button type="submit">Gửi</button>
+              </div> 
+            </div>            
+          </form>
+        </div>
+        <div class="container social-media-section">
+          <ul class="social-links d-flex justify-content-between">
+              <li>
+                <a href="#" class="facebook" title="Facebook" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter" title="Twitter" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="google-plus"
+                  title="Google Plus"
+                  target="_blank"
+                  >
+                    <i class="fab fa-google-plus-g"></i>
+                    <span>Google Plus</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube" title="YouTube" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                  <span>Youtube</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="instagram" title="Instagram" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitch" title="Twitch" target="_blank">
+                  <i class="fab fa-twitch"></i>
+                  <span>Twitch</span>
+                </a>
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
     </main>
+
+    <footer>
+      <div class="footer-wrapper container-fluid">
+        <div class="footer-inner container">
+          <div class="column col-sm-12 col-md-6 col-lg-4">
+            <div class="section-title">Về <span>chúng tôi</span></div>
+            <div class="column-text">
+              <p>Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat a tincidunt vitae semper pellentesque diam volutpat.</p>
+            </div>
+            <div class="footer-menu">
+              <ul>
+                <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="index.html">Trang chủ</a>
+                </li>
+                <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Sản phẩm</a>
+                </li>
+                <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Về chúng tôi</a>
+                </li>
+                <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Blog</a>
+                </li>
+                <li>
+                  <i class="fas fa-caret-right"></i>
+                  <a href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column col-sm-12 col-md-6 col-lg-4">
+            <div class="section-title">Bài viết <span>mới nhất</span></div>
+            <div class="blog-news-item column-item d-flex">
+              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+              <div class="column-item-text">
+                <div class="blog-news-title column-item-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>                       
+                <ul>
+                  <li class="date">
+                    <i class="far fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+            <div class="blog-news-item column-item d-flex">
+              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+              <div class="column-item-text">
+                <div class="blog-news-title column-item-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>                       
+                <ul>
+                  <li class="date">
+                    <i class="far fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
+            </div>            
+            <div class="blog-news-item column-item d-flex">
+              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
+              <div class="column-item-text">
+                <div class="blog-news-title column-item-title">
+                  <a href="">Trailer mới ra mắt!</a>
+                </div>                       
+                <ul>
+                  <li class="date">
+                    <i class="far fa-clock"></i>
+                    <span>26/3/2020</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>   
+          <div class="column col-sm-12 col-md-6 col-lg-4">
+            <div class="section-title">Ứng dụng <span>& Nền tảng</span>
+            </div> 
+            <ul class="app-platform">
+              <li>
+                <a href="">
+                  <i class="fab fa-apple"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">Apple Store</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-google-play"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">Google Play</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-steam-symbol"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">Steam</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-windows"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">WinStore</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-xbox"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">Xbox</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-playstation"></i>
+                  <div>
+                    <p>Mua ngay trên</p>
+                    <p class="platform-name">Playstation</p>
+                  </div>
+                </a>
+              </li>
+            </ul>         
+          </div>
+          <div class="column col-sm-12 col-md-6 col-lg-4 d-xl-none">
+            <div class="section-title">Liên lạc <span>với tôi</span>
+            </div> 
+            <ul class="our-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Đường Nguyễn Lương Bằng, Kiến An, Hải Phòng, Việt Nam</p>                   
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <p>sonvu056@gmail.com</p>               
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <p>0326297095</p>               
+              </li>
+            </ul> 
+            <p class="our-info-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia temporibus blanditiis, voluptatem ipsa maiores nobis laudantium molestias laboriosam? Eius explicabo obcaecati iure sit ad pariatur incidunt id facere dolores.</p>        
+          </div>         
+        </div>
+      </div>
+      <div class="copyright container-fluid">
+          <div class="container">
+            <div class="copyright-inner d-flex align-items-center justify-content-between">
+              <div class="copyright-content">
+                <div class="copyright-logo">
+                  <a href="index.html">
+                    <img src="./img/logo.png" alt="">
+                  </a>
+                </div>
+                <div class="copyright-text">Copyright © 2020 Vũ Hoàng Sơn - All rights reserved.</div>
+                </div>
+                <div class="copyright-nav">
+                  <ul>
+                    <li>
+                      <a href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                      <a href="">CSKH</a>
+                    </li>
+                    <li>
+                      <a href="">Liên hệ</a>
+                    </li>
+                    <li>
+                      <a href="">Quảng cáo</a>
+                    </li>
+                    <li>
+                      <a href="">Phương thức hoạt động</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+    </footer>
     <script>
       function input_display() {
         if(document.getElementById("input_search").style.visibility == "hidden") {

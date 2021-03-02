@@ -64,6 +64,9 @@ img {
 main {
  width: 100%;
 }
+.item {
+  margin-bottom: 0 !important;
+}
 /* Class */
 .uppercase {
   text-transform: uppercase;
@@ -105,9 +108,11 @@ main {
   text-align: center;
   color: black;
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 .section-title span{
   color: #ffc311;
   font-size: 4.5rem;
   font-family: text-font-black;
+  text-transform: uppercase;
 }
