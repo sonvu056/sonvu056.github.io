@@ -28,8 +28,11 @@
       <div class="width-90 margin-auto">
         <div class="d-flex justify-content-between main-header">
           <div class="logo">
-          <a href="index.html" class="site-logo" title="Mygames">
+          <a href="index.html" class="site-logo d-none d-sm-none d-md-none d-lg-block d-xl-block" title="Mygames">
             <img src="./img/logo.png" alt="Mygames" />
+          </a>
+          <a href="index.html" class="site-logo d-block d-sm-block d-md-block d-lg-none d-xl-none" title="Mygames">
+            <img src="./img/logo-alt.png" alt="Mygames" />
           </a>
           </div>
           <div class="contents">
@@ -38,7 +41,7 @@
                 <input type="text" id="input_search" name="search" autocomplete="off"/>
                 <button type="button" onclick="input_display()"><i class="fa fa-search"></i></button>
               </form>
-              <ul class="social-links" d-flex align-items-center>
+              <ul class="social-links d-flex align-items-center">
                 <li>
                   <a href="#" class="facebook" title="Facebook" target="_blank"
                     ><i class="fab fa-facebook-f"></i
@@ -92,7 +95,7 @@
               </ul>
             </nav>
           </div>
-          <div class="nav-shorcut">
+          <div class="nav-shortcut">
             <div></div>
             <div></div>
             <div></div>
@@ -102,6 +105,62 @@
     </header>
 
     <main>
+      <div id="overlay"></div>
+      <div class="nav-mobi">
+            <div class="nav-mobi-inner">
+              <div class="nav-close-icon">
+                <p>x</p>
+              </div>
+              <img src="./img/logo-alt.png" alt="">
+              <ul class="navmobi">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+              <ul class="mobi-social-links">
+                <li>
+                  <a href="#" class="facebook" title="Facebook" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="twitter" title="Twitter" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="google-plus"
+                    title="Google Plus"
+                    target="_blank"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="youtube" title="YouTube" target="_blank"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="instagram" title="Instagram" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="twitch" title="Twitch" target="_blank"
+                    ><i class="fab fa-twitch"></i
+                  ></a>
+                </li>
+              </ul>
+              <div class="user-box mobi-user-box">
+                <a class="login-popup" title="Login">Login</a>
+                <a class="signup-popup" title="Sign Up">Sign Up</a>
+              </div>
+            </div>
+          </div>
       <div class="wrapper">
         <div class="container-fluid slider">
           <div class="row main-row"></div>
@@ -1073,14 +1132,6 @@
           </div>
         </div>
     </footer>
-    <script>
-      function input_display() {
-        if(document.getElementById("input_search").style.visibility == "hidden") {
-          document.getElementById("input_search").style.visibility = "visible";
-        } else {
-          document.getElementById("input_search").style.visibility = "hidden";
-        }
-      }
-    </script>
+    <script src="./js/myjs.js"></script>
   </body>
 </html>
