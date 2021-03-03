@@ -24,7 +24,10 @@
 html {
   font-size: 62.5%;
 }
-
+.body {
+  min-width: 576px;
+  width: auto !important;
+}
 h1,
 h2,
 p {
@@ -83,7 +86,7 @@ main {
   transition: 300ms;
 }
 .button-style-2 > a {
-  padding: 10px 20px;
+  padding: 10px 20px !important;
   font-weight: bold;
   color: #ffc311;
   border: 1px solid #ffc311;
@@ -117,7 +120,7 @@ main {
   text-transform: uppercase;
 }
 .width-90 {
-  width: 90% !important;
+  max-width: 90%
 }
 .margin-auto {
   margin-left: auto;
