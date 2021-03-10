@@ -28,12 +28,6 @@
   background-color: black;
   margin: 0.5rem;
 }
-.nav-active {
-  transform: translateX(0%);
-}
-.nav-deactive {
-  transform: translateX(100%);
-}
 .header-remove {
   transform: translateY(-100%);
 }
@@ -81,10 +75,13 @@
 .mobi-user-box {
   border-radius: 0 !important;
   display: flex !important ;
-  justify-content: center !important;
+  justify-content: space-around !important;
   align-items: center !important;
   margin: 0 !important;
   padding: 2rem !important;
+}
+.mobi-user-box a {
+  border: none !important;
 }
 .nav-close-icon {
   background-color: black;
@@ -956,13 +953,107 @@
   opacity: 0.7;
   z-index: 5;
   cursor: pointer;
+  transform: translateX(100%);
   transition: all 0.5s ease-in;
 }
-.overlay-out {
-  transform: translateX(100%);
+.translateX-in {
+  transform: translateX(0%) !important;
 }
-.overlay-in {
-  transform: translateX(0%);
+.translateY-in {
+  transform: translateY(0%) !important;
+}
+/* Login-form */
+#overlay-form {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffc311;
+  z-index: 25;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+.login-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 25;
+  background: white;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+.login-form {
+  width: 50rem;
+  top: 15rem;
+  margin-top: 10rem;
+}
+.login-title {
+  font-family: title-font;
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.login-content {
+  flex-direction: column;
+}
+.login-content input {
+  padding: 1.3rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #eeeeee;
+  outline: none;
+}
+.login-content input::placeholder {
+  font-size: 1.3rem;
+  color: #cccccc;
+  font-weight: bold;
+}
+.login-content label {
+  color: #777777;
+}
+.login-content a {
+  background: #ffc311;
+  width: max-content;
+  padding: 1.3rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.login-content a:hover {
+  background-color: black;
+  color: white;
+}
+.login-bottom a {
+  color: #424242;
+}
+.login-bottom a:hover {
+  color: #ffc311;
+}
+.login-close {
+  padding: 1rem 2.3rem;
+  background-color: black;
+  width: min-content;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.login-close:hover {
+  background-color: #ffc311;
+  transition: 0.3s;
+}
+.login {
+  padding: 0 !important;
+  background-color: transparent !important;
+  text-transform: none !important;
+  color: #0674ec;
+}
+.login:hover {
+  color: #ffc311 !important;
 }
 @media screen and (max-width: 1199.98px) {
   /* Slider */

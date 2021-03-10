@@ -16,12 +16,10 @@ const navSlide = () => {
     header.classList.add("header-remove");
     header.classList.remove("header-add");
     setTimeout(function () {
-      overlay.classList.remove("overlay-out");
-      overlay.classList.add("overlay-in");
+      overlay.classList.toggle("translateX-in");
     }, 500);
     setTimeout(function () {
-      navmobi.classList.remove("nav-deactive");
-      navmobi.classList.add("nav-active");
+      navmobi.classList.toggle("translateX-in");
     }, 1000);
   });
 };
@@ -33,11 +31,9 @@ const navClose = () => {
   const overlay = document.querySelector("#overlay");
 
   close.addEventListener("click", () => {
-    navmobi.classList.remove("nav-active");
-    navmobi.classList.add("nav-deactive");
+    navmobi.classList.toggle("translateX-in");
     setTimeout(function () {
-      overlay.classList.remove("overlay-in");
-      overlay.classList.add("overlay-out");
+      overlay.classList.toggle("translateX-in");
     }, 500);
     setTimeout(function () {
       header.classList.remove("header-remove");
@@ -45,11 +41,72 @@ const navClose = () => {
     }, 800);
   });
 };
-const overlayDefault = () => {
-    const overlay = document.querySelector("#overlay");
 
-    overlay.classList.add("overlay-out");
-}
-overlayDefault();
+const formIn = () => {
+  const loginPopup = document.querySelector(".login-popup");
+  const loginPopupNav = document.querySelector(".login-popup-nav");
+  const signupPopup = document.querySelector(".signup-popup");
+  const signupPopupNav = document.querySelector(".signup-popup-nav");
+  const loginOverlay = document.querySelector("#overlay-form");
+  const loginForm = document.querySelector(".login-wrapper");
+  const signupForm = document.querySelector(".signup-wrapper");
+  loginPopup.addEventListener("click", () => {
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      loginForm.classList.toggle("translateY-in");
+    }, 600);
+  });
+  loginPopupNav.addEventListener("click", () => {
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      loginForm.classList.toggle("translateY-in");
+    }, 600);
+  });
+  signupPopup.addEventListener("click", () => {
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      signupForm.classList.toggle("translateY-in");
+    }, 600);
+  });
+  signupPopupNav.addEventListener("click", () => {
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      signupForm.classList.toggle("translateY-in");
+    }, 600);
+  });
+};
+const formOut = () => {
+  const loginClose = document.querySelector(".login-close");
+  const signupClose = document.querySelector(".signup-close");
+  const loginOverlay = document.querySelector("#overlay-form");
+  const loginForm = document.querySelector(".login-wrapper");
+  const signupForm = document.querySelector(".signup-wrapper");
+  loginClose.addEventListener("click", () => {
+    setTimeout(function () {
+      loginForm.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 600);
+  });
+  signupClose.addEventListener("click", () => {
+    setTimeout(function () {
+      signupForm.classList.toggle("translateY-in");
+    }, 300);
+    setTimeout(function () {
+      loginOverlay.classList.toggle("translateY-in");
+    }, 600);
+  });
+};
 navSlide();
 navClose();
+formIn();
+formOut();

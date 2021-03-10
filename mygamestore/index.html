@@ -157,11 +157,85 @@
                 </li>
               </ul>
               <div class="user-box mobi-user-box">
-                <a class="login-popup" title="Login">Login</a>
-                <a class="signup-popup" title="Sign Up">Sign Up</a>
+                <a class="login-popup login-popup-nav" title="Login">Login</a>
+                <a class="signup-popup signup-popup-nav" title="Sign Up">Sign Up</a>
               </div>
             </div>
-          </div>
+      </div>
+      <div id="overlay-form"></div>
+      <div class="login-wrapper">
+        <div class="login-close">x</div>
+        <div class="container login-form">
+          <form action="" method="post">
+            <div class="login-title">Login</div>
+              <div class="login-content d-flex">
+                <input
+                    type="text"
+                    placeholder="Tên tài khoản"
+                    name="uname"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Mật khẩu"
+                    name="psw"
+                    required
+                    autocomplete="off"
+                  />
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Ghi nhớ Đăng nhập
+                  </label>
+                  <a href="">Đăng nhập</a>
+                </div>
+                <div class="login-bottom d-flex justify-content-between">
+                  <a href="#">Bạn quên mật khẩu?</a>
+                  <a href="#">Tạo tài khoản mới</a>
+                </div>
+          </form>
+        </div>
+      </div>
+      <div class="login-wrapper signup-wrapper">
+        <div class="login-close signup-close">x</div>
+        <div class="container login-form">
+          <form action="" method="post">
+            <div class="login-title">Đăng kí</div>
+              <div class="login-content d-flex">
+                <input
+                    type="text"
+                    placeholder="Tên đăng nhập"
+                    name="uname"
+                    required
+                    autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Mật khẩu"
+                  name="psw"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Nhập lại mật khẩu"
+                  name="re-psw"
+                  required
+                  autocomplete="off"
+                />
+                <a href="">Đăng kí</a>
+                <span>Bạn đã có tài khoản? <a href="" class="login">Đăng nhập</a></span>
+              </div>
+          </form>
+        </div>
+      </div>
       <div class="wrapper">
         <div class="container-fluid slider">
           <div class="row main-row"></div>
