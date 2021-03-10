@@ -956,12 +956,6 @@
   transform: translateX(100%);
   transition: all 0.5s ease-in;
 }
-.translateX-in {
-  transform: translateX(0%) !important;
-}
-.translateY-in {
-  transform: translateY(0%) !important;
-}
 /* Login-form */
 #overlay-form {
   position: fixed;
