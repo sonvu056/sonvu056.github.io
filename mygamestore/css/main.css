@@ -135,3 +135,6 @@ main {
 .translateY-in {
   transform: translateY(0%) !important;
 }
+input {
+  outline: none;
+}

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/page-header-footer.css" />
     <link rel="stylesheet" href="./css/upper-footer.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
   </head>
   <body>
     <header class="header container-fluid">
@@ -270,6 +271,59 @@
             </ul>
           </div>
         </div>
+        <div class="cart-wrapper">
+          <div class="cart-main">
+            <div class="cart-item">
+              <div class="col-left d-flex">
+                <div class="item-image">
+                  <img src="./img/cart-1.png" alt="Destiny-2" />
+                </div>
+                <div class="item-info">
+                  <p class="name">Destiny 2: Beyond Light</p>
+                  <p class="status">Trạng thái: <span>Còn hàng</span></p>
+                  <p class="remove">Xóa hàng</p>
+                </div>
+              </div>
+              <div class="col-right d-flex">
+                <div class="item-price">310.000đ</div>
+                <div class="item-quantity">
+                  <p id="dec" class="dec">-</p>
+                  <input type="text" name="" value="1" />
+                  <p id="inc" class="inc">+</p>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="col-left d-flex">
+                <div class="item-image">
+                  <img src="./img/cart-2.png" alt="Satisfactory" />
+                </div>
+                <div class="item-info">
+                  <p class="name">Satisfactory</p>
+                  <p class="status">Trạng thái: <span>Còn hàng</span></p>
+                  <p class="remove">Xóa hàng</p>
+                </div>
+              </div>
+              <div class="col-right d-flex">
+                <div class="item-price">250.000đ</div>
+                <div class="item-quantity">
+                  <p id="dec" class="dec">-</p>
+                  <input type="text" name="" value="1" />
+                  <p id="inc" class="inc">+</p>
+                </div>
+              </div>
+            </div>
+            <div class="estimated-price d-flex justify-content-between">
+              <p>Giá dự tính:</p>
+              <p>560.000đ</p>
+            </div>
+            <p>Giá đã bao gồm thuế VAT</p>
+            <div class="d-flex justify-content-between">
+                <div class="continue">Tiếp tục mua hàng</div>
+                <div class="pay">Thanh toán</div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -480,5 +534,18 @@
       </div>
     </footer>
     <script src="./js/myjs.js"></script>
+    <script>
+      $(".inc").click(function () {
+        $(this)
+          .prev()
+          .val(+$(this).prev().val() + 1);
+      });
+      $(".dec").click(function () {
+        if ($(this).next().val() > 0)
+          $(this)
+            .next()
+            .val(+$(this).next().val() - 1);
+      });
+    </script>
   </body>
 </html>

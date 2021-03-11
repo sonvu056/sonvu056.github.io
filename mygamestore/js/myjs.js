@@ -94,6 +94,7 @@ const formOut = () => {
     }, 500);
   });
 };
+const 
 navSlide();
 navClose();
 formIn();

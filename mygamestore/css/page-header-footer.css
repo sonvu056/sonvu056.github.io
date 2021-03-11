@@ -438,6 +438,13 @@
   font-size: 1.4rem;
   color: white;
 }
+.column-item-title a{
+  font-family: text-font-black;
+}
+.column-item-title a:hover,
+.column-item-text i{
+  color: #ffc311;
+}
 /* Copyright */
 .copyright-logo a img {
   width: 15rem;
