@@ -14,13 +14,13 @@ const navSlide = () => {
 
   slide.addEventListener("click", () => {
     header.classList.add("header-remove");
-    header.classList.remove("header-add");
+    header.classList.remove("header-add");    
     setTimeout(function () {
       overlay.classList.toggle("translateX-in");
-    }, 500);
+    }, 300);
     setTimeout(function () {
       navmobi.classList.toggle("translateX-in");
-    }, 1000);
+    }, 800);
   });
 };
 
@@ -34,7 +34,7 @@ const navClose = () => {
     navmobi.classList.toggle("translateX-in");
     setTimeout(function () {
       overlay.classList.toggle("translateX-in");
-    }, 500);
+    }, 300);
     setTimeout(function () {
       header.classList.remove("header-remove");
       header.classList.add("header-add");
@@ -51,36 +51,28 @@ const formIn = () => {
   const loginForm = document.querySelector(".login-wrapper");
   const signupForm = document.querySelector(".signup-wrapper");
   loginPopup.addEventListener("click", () => {
-    setTimeout(function () {
-      loginOverlay.classList.toggle("translateY-in");
-    }, 300);
+    loginOverlay.classList.toggle("translateY-in");
     setTimeout(function () {
       loginForm.classList.toggle("translateY-in");
-    }, 600);
+    }, 400);
   });
   loginPopupNav.addEventListener("click", () => {
-    setTimeout(function () {
-      loginOverlay.classList.toggle("translateY-in");
-    }, 300);
+    loginOverlay.classList.toggle("translateY-in");
     setTimeout(function () {
       loginForm.classList.toggle("translateY-in");
-    }, 600);
+    }, 400);
   });
   signupPopup.addEventListener("click", () => {
-    setTimeout(function () {
-      loginOverlay.classList.toggle("translateY-in");
-    }, 300);
+    loginOverlay.classList.toggle("translateY-in");
     setTimeout(function () {
       signupForm.classList.toggle("translateY-in");
-    }, 600);
+    }, 400);
   });
   signupPopupNav.addEventListener("click", () => {
-    setTimeout(function () {
-      loginOverlay.classList.toggle("translateY-in");
-    }, 300);
+    loginOverlay.classList.toggle("translateY-in");
     setTimeout(function () {
       signupForm.classList.toggle("translateY-in");
-    }, 600);
+    }, 400);
   });
 };
 const formOut = () => {
@@ -90,20 +82,16 @@ const formOut = () => {
   const loginForm = document.querySelector(".login-wrapper");
   const signupForm = document.querySelector(".signup-wrapper");
   loginClose.addEventListener("click", () => {
-    setTimeout(function () {
-      loginForm.classList.toggle("translateY-in");
-    }, 300);
+    loginForm.classList.toggle("translateY-in");
     setTimeout(function () {
       loginOverlay.classList.toggle("translateY-in");
-    }, 600);
+    }, 500);
   });
   signupClose.addEventListener("click", () => {
-    setTimeout(function () {
-      signupForm.classList.toggle("translateY-in");
-    }, 300);
+    signupForm.classList.toggle("translateY-in");
     setTimeout(function () {
       loginOverlay.classList.toggle("translateY-in");
-    }, 600);
+    }, 500);
   });
 };
 navSlide();

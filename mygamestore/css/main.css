@@ -15,7 +15,10 @@
   font-family: title-font;
   src: url(../font/Titillium_Web/TitilliumWeb-Black.ttf);
 }
-
+@font-face {
+  font-family: title-font-vn;
+  src: url(../font/Open_Sans/OpenSans-ExtraBold.ttf);
+}
 * {
   box-sizing: border-box;
   font-family: text-font;

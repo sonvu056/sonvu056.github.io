@@ -89,7 +89,7 @@
             <nav class="main-navbar d-flex justify-content-end">
               <ul class="navbar-menu">
                 <li class="nav-item"><a href="index.html">Trang chủ</a></li>
-                <li class="nav-item"><a href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a href="products.html">Sản phẩm</a></li>
                 <li class="nav-item"><a href="#">About us</a></li>
                 <li class="nav-item"><a href="#">Blog</a></li>
                 <li class="nav-item"><a href="#">Liên hệ</a></li>
@@ -102,7 +102,7 @@
             <div></div>
           </div>
         </div>
-      </div>
+      </div>    
     </header>
 
     <main>
@@ -115,7 +115,7 @@
               <img src="./img/logo-alt.png" alt="">
               <ul class="navmobi">
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Liên hệ</a></li>
@@ -650,7 +650,7 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="categorized-origin">
               <div class="game-list d-flex flex-wrap">
-                <div class="game">
+                <div class="game col-sm-6 col-md-3">
                   <div class="poster">
                     <a href="" title="Call of Duty">
                       <img src="./img/item2.jpg" alt="Dead Space 3" />
@@ -658,7 +658,7 @@
                     <div class="gerne d-flex align-items-center uppercase">
                       <ul>
                         <li>
-                          <a href="" title="Adventure">Phiêu lưu</a>
+                          <a href="" title="Adventure">Hành động</a>
                         </li>
                         <li>
                           <a href="" title="FPS">FPS</a>
@@ -669,7 +669,47 @@
                   </div>
                   <div class="content">
                     <div class="game-title uppercase">
-                      <a href="" title="Dead Space 3">Call of Duty</a>
+                      <a href="" title="Dead Space 3">World War I</a>
+                    </div>
+                    <ul class="game-detail">
+                      <li class="platform d-flex align-items-center">
+                        <i class="fas fa-tv"></i>
+                        <ul>
+                          <li>
+                            <a href="" title="Steam">Steam</a>
+                          </li>
+                          <li>
+                            <a href="" title="Playstation">Playstation</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="summary">
+                      Consectetuer adipiscing elit, sed diam nonummy nibh
+                      euismod tincidunt laoreet
+                    </div>
+                  </div>
+                </div>
+                <div class="game col-sm-6 col-md-3">
+                  <div class="poster">
+                    <a href="" title="Call of Duty">
+                      <img src="./img/item2.jpg" alt="Dead Space 3" />
+                    </a>
+                    <div class="gerne d-flex align-items-center uppercase">
+                      <ul>
+                        <li>
+                          <a href="" title="Adventure">Hành động</a>
+                        </li>
+                        <li>
+                          <a href="" title="FPS">FPS</a>
+                        </li>
+                      </ul>
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="game-title uppercase">
+                      <a href="" title="Dead Space 3">World War I</a>
                     </div>
                     <ul class="game-detail">
                       <li class="platform d-flex align-items-center">
@@ -1037,160 +1077,169 @@
     <footer>
       <div class="footer-wrapper container-fluid">
         <div class="footer-inner width-90 margin-auto">
-          <div class="column col-xs-12 col-sm-6 col-md-4">
-            <div class="section-title">Về <span>chúng tôi</span></div>
-            <div class="column-text">
-              <p>Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat a tincidunt vitae semper pellentesque diam volutpat.</p>
+          <div class="row">
+            <div class="column col-xs-12 col-sm-6 col-md-4">
+              <div class="section-title">Về <span>chúng tôi</span></div>
+              <div class="column-text">
+                <p>
+                  Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi
+                  nullam vehicula ipsum a arcu cursus. Volutpat a tincidunt
+                  vitae semper pellentesque diam volutpat.
+                </p>
+              </div>
+              <div class="footer-menu">
+                <ul>
+                  <li>
+                    <i class="fas fa-caret-right"></i>
+                    <a href="index.html">Trang chủ</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-caret-right"></i>
+                    <a href="">Sản phẩm</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-caret-right"></i>
+                    <a href="">Về chúng tôi</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-caret-right"></i>
+                    <a href="">Blog</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-caret-right"></i>
+                    <a href="">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="footer-menu">
-              <ul>
+            <div class="column col-xs-12 col-sm-6 col-md-4">
+              <div class="section-title">Bài viết <span>mới nhất</span></div>
+              <div class="blog-news-item column-item d-flex">
+                <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                <div class="column-item-text">
+                  <div class="blog-news-title column-item-title">
+                    <a href="">Trailer mới ra mắt!</a>
+                  </div>
+                  <ul>
+                    <li class="date">
+                      <i class="far fa-clock"></i>
+                      <span>26/3/2020</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog-news-item column-item d-flex">
+                <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                <div class="column-item-text">
+                  <div class="blog-news-title column-item-title">
+                    <a href="">Trailer mới ra mắt!</a>
+                  </div>
+                  <ul>
+                    <li class="date">
+                      <i class="far fa-clock"></i>
+                      <span>26/3/2020</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog-news-item column-item d-flex">
+                <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                <div class="column-item-text">
+                  <div class="blog-news-title column-item-title">
+                    <a href="">Trailer mới ra mắt!</a>
+                  </div>
+                  <ul>
+                    <li class="date">
+                      <i class="far fa-clock"></i>
+                      <span>26/3/2020</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="column col-xs-12 col-sm-6 col-md-4">
+              <div class="section-title">Ứng dụng <span>& Nền tảng</span></div>
+              <ul class="app-platform">
                 <li>
-                  <i class="fas fa-caret-right"></i>
-                  <a href="index.html">Trang chủ</a>
+                  <a href="">
+                    <i class="fab fa-apple"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">Apple Store</p>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <i class="fas fa-caret-right"></i>
-                  <a href="">Sản phẩm</a>
+                  <a href="">
+                    <i class="fab fa-google-play"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">Google Play</p>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <i class="fas fa-caret-right"></i>
-                  <a href="">Về chúng tôi</a>
+                  <a href="">
+                    <i class="fab fa-steam-symbol"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">Steam</p>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <i class="fas fa-caret-right"></i>
-                  <a href="">Blog</a>
+                  <a href="">
+                    <i class="fab fa-windows"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">WinStore</p>
+                    </div>
+                  </a>
                 </li>
                 <li>
-                  <i class="fas fa-caret-right"></i>
-                  <a href="">Liên hệ</a>
+                  <a href="">
+                    <i class="fab fa-xbox"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">Xbox</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fab fa-playstation"></i>
+                    <div>
+                      <p>Mua ngay trên</p>
+                      <p class="platform-name">Playstation</p>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-4">
-            <div class="section-title">Bài viết <span>mới nhất</span></div>
-            <div class="blog-news-item column-item d-flex">
-              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
-              <div class="column-item-text">
-                <div class="blog-news-title column-item-title">
-                  <a href="">Trailer mới ra mắt!</a>
-                </div>                       
-                <ul>
-                  <li class="date">
-                    <i class="far fa-clock"></i>
-                    <span>26/3/2020</span>
-                  </li>
-                </ul>
-              </div>
-            </div>  
-            <div class="blog-news-item column-item d-flex">
-              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
-              <div class="column-item-text">
-                <div class="blog-news-title column-item-title">
-                  <a href="">Trailer mới ra mắt!</a>
-                </div>                       
-                <ul>
-                  <li class="date">
-                    <i class="far fa-clock"></i>
-                    <span>26/3/2020</span>
-                  </li>
-                </ul>
-              </div>
-            </div>            
-            <div class="blog-news-item column-item d-flex">
-              <a href=""><img src="./img/blog-1.jpg" alt=""></a>
-              <div class="column-item-text">
-                <div class="blog-news-title column-item-title">
-                  <a href="">Trailer mới ra mắt!</a>
-                </div>                       
-                <ul>
-                  <li class="date">
-                    <i class="far fa-clock"></i>
-                    <span>26/3/2020</span>
-                  </li>
-                </ul>
-              </div>
+            <div class="column col-xs-12 col-sm-6 col-md-4 d-lg-none">
+              <div class="section-title">Liên lạc <span>với tôi</span></div>
+              <ul class="our-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Đường Nguyễn Lương Bằng, Kiến An, Hải Phòng, Việt Nam</p>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <p>sonvu056@gmail.com</p>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <p>0326297095</p>
+                </li>
+              </ul>
+              <p class="our-info-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+                mollitia temporibus blanditiis, voluptatem ipsa maiores nobis
+                laudantium molestias laboriosam? Eius explicabo obcaecati iure
+                sit ad pariatur incidunt id facere dolores.
+              </p>
             </div>
-          </div>   
-          <div class="column col-xs-12 col-sm-6 col-md-4">
-            <div class="section-title">Ứng dụng <span>& Nền tảng</span>
-            </div> 
-            <ul class="app-platform">
-              <li>
-                <a href="">
-                  <i class="fab fa-apple"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">Apple Store</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-google-play"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">Google Play</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-steam-symbol"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">Steam</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-windows"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">WinStore</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-xbox"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">Xbox</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fab fa-playstation"></i>
-                  <div>
-                    <p>Mua ngay trên</p>
-                    <p class="platform-name">Playstation</p>
-                  </div>
-                </a>
-              </li>
-            </ul>         
-          </div>
-          <div class="column col-xs-12 col-sm-6 col-md-4 d-lg-none">
-            <div class="section-title">Liên lạc <span>với tôi</span>
-            </div> 
-            <ul class="our-info">
-              <li>
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Đường Nguyễn Lương Bằng, Kiến An, Hải Phòng, Việt Nam</p>                   
-              </li>
-              <li>
-                <i class="fas fa-envelope"></i>
-                <p>sonvu056@gmail.com</p>               
-              </li>
-              <li>
-                <i class="fas fa-phone-alt"></i>
-                <p>0326297095</p>               
-              </li>
-            </ul> 
-            <p class="our-info-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia temporibus blanditiis, voluptatem ipsa maiores nobis laudantium molestias laboriosam? Eius explicabo obcaecati iure sit ad pariatur incidunt id facere dolores.</p>        
-          </div>         
+          </div>        
         </div>
       </div>
       <div class="copyright container-fluid">

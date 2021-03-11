@@ -15,7 +15,7 @@
   height: 100vh;
   padding: 6rem 3rem;
   transform: translateX(100%);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in-out;
   z-index: 10;
 }
 .nav-shortcut {
@@ -954,7 +954,7 @@
   z-index: 5;
   cursor: pointer;
   transform: translateX(100%);
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 /* Login-form */
 #overlay-form {
@@ -968,7 +968,7 @@
   background-color: #ffc311;
   z-index: 25;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateY(-100%);
 }
 .login-wrapper {
