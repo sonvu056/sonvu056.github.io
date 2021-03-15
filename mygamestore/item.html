@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="./library/bootstrap-5.0.0-beta1-dist/css/bootstrap.css"
     />
-    <title>Mygames - Products</title>
+    <title>Mygames - Item</title>
     <script
       src="https://kit.fontawesome.com/d362bd76db.js"
       crossorigin="anonymous"
@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/page-header-footer.css" />
-    <link rel="stylesheet" href="./css/upper-footer.css">
-    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="./css/upper-footer.css" />
+    <link rel="stylesheet" href="./css/item.css" />
   </head>
   <body>
     <header class="header container-fluid">
@@ -104,14 +104,14 @@
                 <a class="login-popup" title="Login">Login</a>
                 <a class="signup-popup" title="Sign Up">Sign Up</a>
               </div>
-              <a href="cart.html" class="cart-icon">
+              <a href="" class="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
               </a>
             </div>
             <nav class="main-navbar d-flex justify-content-end">
               <ul class="navbar-menu">
                 <li class="nav-item"><a href="index.html">Trang chủ</a></li>
-                <li class="nav-item"><a href="#">Sản phẩm</a></li>
+                <li class="nav-item"><a href="products.html">Sản phẩm</a></li>
                 <li class="nav-item"><a href="#">About us</a></li>
                 <li class="nav-item"><a href="#">Blog</a></li>
                 <li class="nav-item"><a href="#">Liên hệ</a></li>
@@ -126,7 +126,8 @@
         </div>
       </div>
     </header>
-    <main>
+
+    <main class="container-fluid">
       <div id="overlay"></div>
       <div class="nav-mobi">
         <div class="nav-mobi-inner">
@@ -263,351 +264,97 @@
       <div class="main-wrapper container-fluid">
         <div class="page-info container-fluid">
           <div class="page-info-inner width-90 margin-auto">
-            <div class="page-title uppercase">Sản phẩm</div>
+            <div class="page-title uppercase">ASSASSIN’S CREED: ORIGINS</div>
             <ul class="mybreadcrumb">
               <li><a href="index.html">Trang chủ</a></li>
-              <li><span>Sản phẩm</span></li>
+              <li><a href="./products.html">Sản phẩm</a></li>
+              <li><span>Giỏ hàng</span>Assassin's Creed: Origins</li>
             </ul>
           </div>
         </div>
-        <div class="container-fluid game-search">
-          <form action="" method="get">
-            <div class="container-fluid game-search-wrapper width-90">
-              <div
-                class="inner-item d-flex justify-content-between align-items-center"
-              >
-                <div class="item game-keyword">
-                  <input
-                    type="text"
-                    name="keyword"
-                    placeholder="Từ khóa"
-                    autocomplete="off"
-                  />
+        <div class="main-content-wrapper margin-auto">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-layout">
+            <div class="media-tab-content content-box">
+              <div class="tab-panel active" role="tabpanel" id="image-gallery">
+                <div class="mySlides">
+                  <img src="./img/gallery-1.jpg" style="width: 100%" />
                 </div>
-                <div class="item game-category">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    p
-                  >
-                    <option class="select-option" selected>Danh mục</option>
-                    <option class="select-option" value="1">
-                      Early Access
-                    </option>
-                    <option class="select-option" value="2">
-                      Free to play
-                    </option>
-                  </select>
+                <div class="mySlides">
+                  <img src="./img/gallery-2.jpg" style="width: 100%" />
                 </div>
-                <div class="item game-platform">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    p
-                  >
-                    <option class="select-option" selected>Nền tảng</option>
-                    <option class="select-option" value="1">Mac OS X</option>
-                    <option class="select-option" value="2">
-                      Microsoft Windows
-                    </option>
-                    <option class="select-option" value="3">Origin</option>
-                    <option class="select-option" value="4">
-                      Playstation 4
-                    </option>
-                    <option class="select-option" value="5">Steam</option>
-                    <option class="select-option" value="6">Uplay</option>
-                    <option class="select-option" value="7">Xbox One</option>
-                  </select>
+                <div class="mySlides">
+                  <img src="./img/gallery-3.jpg" style="width: 100%" />
                 </div>
-                <div class="item game-gerne">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    p
-                  >
-                    <option class="select-option" selected>Thể loại</option>
-                    <option class="select-option" value="1">Hành động</option>
-                    <option class="select-option" value="2">Phiêu lưu</option>
-                    <option class="select-option" value="3">FPS</option>
-                    <option class="select-option" value="4">Đua xe</option>
-                    <option class="select-option" value="5">Nhập vai</option>
-                    <option class="select-option" value="6">Giả lập</option>
-                    <option class="select-option" value="7">Thể thao</option>
-                    <option class="select-option" value="8">Chiến thuật</option>
-                    <option class="select-option" value="9">Thẻ bài</option>
-                  </select>
+                <div class="mySlides">
+                  <img src="./img/gallery-4.jpg" style="width: 100%" />
                 </div>
-                <div class="item game-language">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    p
-                  >
-                    <option class="select-option" selected>Ngôn ngữ</option>
-                    <option class="select-option" value="1">Tiếng Anh</option>
-                    <option class="select-option" value="2">Tiếng Đức</option>
-                    <option class="select-option" value="3">Tiếng Pháp</option>
-                    <option class="select-option" value="4">Tiếng Nga</option>
-                    <option class="select-option" value="5">Tiếng Việt</option>
-                    <option class="select-option" value="6">Tiếng Nhật</option>
-                  </select>
+                <div class="mySlides">
+                  <img src="./img/gallery-5.jpg" style="width: 100%" />
                 </div>
-                <div class="item submit">
-                  <button type="submit">Tìm kiếm</button>
+                <div class="mySlides">
+                  <img src="./img/gallery-6.jpg" style="width: 100%" />
                 </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="gametab container-fluid">
-          <div
-            class="game-list d-flex flex-wrap justify-content-between width-90 margin-auto"
-          >
-            <div class="row">
-              <div class="game col-sm-6 col-md-3">
-                <div class="poster">
-                  <a href="" title="Dead Space 3">
-                    <img src="./img/item1.jpg" alt="Dead Space 3" />
-                  </a>
-                  <div class="gerne d-flex align-items-center uppercase">
-                    <ul>
-                      <li>
-                        <a href="" title="Adventure">Phiêu lưu</a>
-                      </li>
-                      <li>
-                        <a href="" title="FPS">FPS</a>
-                      </li>
-                    </ul>
-                    <i class="fas fa-tags"></i>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="row">
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-1.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(1)"
+                    />
                   </div>
-                </div>
-                <div class="content">
-                  <div class="game-title uppercase">
-                    <a href="" title="Dead Space 3">Dead space 3</a>
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-2.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(2)"
+                    />
                   </div>
-                  <ul class="game-detail">
-                    <li class="platform d-flex align-items-center">
-                      <i class="fas fa-tv"></i>
-                      <ul>
-                        <li>
-                          <a href="" title="Steam">Steam</a>
-                        </li>
-                        <li>
-                          <a href="" title="Playstation">Playstation</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <div class="summary">
-                    Journey across space to the icy planet of Tau Volantis with
-                    Isaac Clarke and Sgt. John Carver to discover and destroy
-                    the source of the Necromorph outbreak.
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-3.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(3)"
+                    />
+                  </div>
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-4.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(4)"
+                    />
+                  </div>
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-5.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(5)"
+                    />
+                  </div>
+                  <div class="column-img">
+                    <img
+                      class="demo cursor"
+                      src="./img/gallery-6.jpg"
+                      style="width: 100%"
+                      onclick="currentSlide(6)"
+                    />
                   </div>
                 </div>
               </div>
-              <div class="game col-sm-6 col-md-3">
-                <div class="poster">
-                  <a href="" title="Call of Duty">
-                    <img src="./img/item2.jpg" alt="Call of Duty" />
-                  </a>
-                  <div class="gerne d-flex align-items-center uppercase">
-                    <ul>
-                      <li>
-                        <a href="" title="Action">Hành động</a>
-                      </li>
-                      <li>
-                        <a href="" title="FPS">FPS</a>
-                      </li>
-                    </ul>
-                    <i class="fas fa-tags"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <div class="game-title uppercase">
-                    <a href="" title="Call of Duty">World War II</a>
-                  </div>
-                  <ul class="game-detail">
-                    <li class="platform d-flex align-items-center">
-                      <i class="fas fa-tv"></i>
-                      <ul>
-                        <li>
-                          <a href="" title="Steam">Steam</a>
-                        </li>
-                        <li>
-                          <a href="" title="Playstation">Playstation</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <div class="summary">
-                    Call of Duty® returns to its roots with Call of Duty®: WWII
-                    - a breathtaking experience that redefines World War II for
-                    a new gaming generation.
-                  </div>
-                </div>
-              </div>
-              <div class="game col-sm-6 col-md-3">
-                <div class="poster">
-                  <a href="" title="Satisfactory">
-                    <img src="./img/item3.jpg" alt="Satisfactory" />
-                  </a>
-                  <div class="gerne d-flex align-items-center uppercase">
-                    <ul>
-                      <li>
-                        <a href="" title="Adventure">Phiêu lưu</a>
-                      </li>
-                      <li>
-                        <a href="" title="Building">Xây dựng</a>
-                      </li>
-                    </ul>
-                    <i class="fas fa-tags"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <div class="game-title uppercase">
-                    <a href="" title="Satisfactory">Satisfactory</a>
-                  </div>
-                  <ul class="game-detail">
-                    <li class="platform d-flex align-items-center">
-                      <i class="fas fa-tv"></i>
-                      <ul>
-                        <li>
-                          <a href="" title="Steam">Steam</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <div class="summary">
-                    Satisfactory is a first-person open-world factory building
-                    game with a dash of exploration and combat. Play alone or
-                    with friends, explore an alien planet, create multi-story
-                    factories, and enter conveyor belt heaven!
-                  </div>
-                </div>
-              </div>
-              <div class="game col-sm-6 col-md-3">
-                <div class="poster">
-                  <a href="" title="Doom Eternal">
-                    <img src="./img/item4.jpg" alt="Doom Eternal" />
-                  </a>
-                  <div class="gerne d-flex align-items-center uppercase">
-                    <ul>
-                      <li>
-                        <a href="" title="Adventure">Phiêu lưu</a>
-                      </li>
-                      <li>
-                        <a href="" title="FPS">FPS</a>
-                      </li>
-                    </ul>
-                    <i class="fas fa-tags"></i>
-                  </div>
-                </div>
-                <div class="content">
-                  <div class="game-title uppercase">
-                    <a href="" title="Doom Eternal">Doom Eternal</a>
-                  </div>
-                  <ul class="game-detail">
-                    <li class="platform d-flex align-items-center">
-                      <i class="fas fa-tv"></i>
-                      <ul>
-                        <li>
-                          <a href="" title="Steam">Steam</a>
-                        </li>
-                        <li>
-                          <a href="" title="Playstation">Playstation</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <div class="summary">
-                    Hell’s armies have invaded Earth. Become the Slayer in an
-                    epic single-player campaign to conquer demons across
-                    dimensions and stop the final destruction of humanity. The
-                    only thing they fear... is you.
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>  
+            <div></div>        
           </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 right-layout"></div>
         </div>
-      </div>
-      <div class="container-fluid newsletter">
-        <form action="" method="get" class="newsletter-inner">
-          <div
-            class="newsletter-wrapper d-flex justify-content-between align-items-center flex-wrap margin-auto width-90"
-          >
-            <div class="item newsletter-title uppercase">newsletter</div>
-            <div class="item newsletter-input">
-              <input
-                type="text"
-                name="adress"
-                placeholder="Địa chỉ email của bạn"
-                autocomplete="off"
-              />
-            </div>
-            <div class="item newsletter-input">
-              <input
-                type="text"
-                name="last-name"
-                placeholder="Họ"
-                autocomplete="off"
-              />
-            </div>
-            <div class="item newsletter-input">
-              <input
-                type="text"
-                name="first-name"
-                placeholder="Tên"
-                autocomplete="off"
-              />
-            </div>
-            <div class="item submit">
-              <button type="submit">Gửi</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="container-fluid social-media-section width-90 justify-content-between">
-        <ul class="social-links d-flex justify-content-between">
-          <li>
-            <a href="#" class="facebook" title="Facebook" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-              <span>Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="twitter" title="Twitter" target="_blank">
-              <i class="fab fa-twitter"></i>
-              <span>Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="google-plus" title="Google Plus" target="_blank">
-              <i class="fab fa-google-plus-g"></i>
-              <span>Google Plus</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="youtube" title="YouTube" target="_blank">
-              <i class="fab fa-youtube"></i>
-              <span>Youtube</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="instagram" title="Instagram" target="_blank">
-              <i class="fab fa-instagram"></i>
-              <span>Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="twitch" title="Twitch" target="_blank">
-              <i class="fab fa-twitch"></i>
-              <span>Twitch</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </main>
+
     <footer>
       <div class="footer-wrapper container-fluid">
         <div class="footer-inner width-90 margin-auto">
@@ -815,5 +562,41 @@
       </div>
     </footer>
     <script src="./js/myjs.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
   </body>
 </html>
