@@ -1,13 +1,10 @@
 .page-title {
   font-family: title-font;
 }
-.content-box {
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
-}
 /* Image Gallery */
 .main-content-wrapper {
   margin-top: 7rem;
-  width: 85%;
+  width: 90%;
 }
 .media-tab-content {
   margin-bottom: 5rem;
@@ -54,7 +51,7 @@
   float: left;
   width: calc(100% / 6);
   padding: 0;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   max-height: 7rem;
 }
@@ -64,4 +61,171 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+.content-box {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+  padding: 3.5rem 3rem;
+  margin-bottom: 3rem;
+}
+.content-box-title {
+  margin-bottom: 2rem;
+}
+.content-box-title,
+.content-box-title span {
+  text-transform: uppercase;
+  font-family: title-font-vn;
+  font-size: 2.8rem;
+}
+.content-box-title span {
+  color: #ffc311;
+  margin-bottom: 2rem;
+}
+/* Game details */
+.game-details ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.game-details .title > i {
+  color: #ffc311;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+.game-details .title > span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777777;
+}
+.game-details .content ul {
+  display: flex;
+}
+.game-details .content ul li {
+  margin-right: 0.3rem;
+}
+.game-details .content ul li p {
+  color: #777777;
+}
+/* Game price */
+.game-price {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+}
+.game-price p {
+  padding-bottom: 2rem;
+}
+.game-price .content-box-title,
+.game-price .content-box-title span {
+  font-family: title-font;
+  margin: 0;
+}
+.game-price i {
+  font-size: 2.8rem;
+}
+.top {
+  margin-bottom: 0.5rem;
+}
+.price {
+  background-color: black;
+  display: flex;
+  width: max-content;
+  position: absolute;
+  right: 10%;
+}
+.percentage {
+  display: flex;
+  margin: 0.2rem;
+  background: #ffc311;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  align-items: center;
+}
+.price-details {
+  margin: 0.2rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+}
+.price-1 {
+  font-size: 1rem;
+  color: white;
+  text-align: end;
+  margin-bottom: 0.2rem;
+}
+.price-2 {
+  color: white;
+  font-size: 1.4rem;
+}
+.add-to-cart {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0.2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #ffbf00 54.69%, #dfa90a 100%);
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.add-to-cart a:hover {
+  color: black;
+  transition: 0.5s;
+}
+/* Game content */
+.game-content p {
+  font-size: 1.5rem;
+  color: #777777;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.embed-responsive {
+  margin: 3rem 0;
+}
+/* System Requirements*/
+.nav {
+  margin-bottom: 4rem;
+}
+.system-btn {
+  margin-right: 2rem;
+}
+.system-btn a{
+  color: #ffc311;
+}
+.system-btn:hover a{
+  background-color: #ffc311 !important; 
+}
+.system-btn.active {
+  background-color: #ffc311;
+}
+.system-btn.active a{
+  color: white;
+}
+.item {
+  padding-bottom: 2.5rem;
+}
+.list-name {
+  color: #ffbf00;
+  text-transform: uppercase;
+  font-family: text-font-bold;
+  margin-bottom: 1.5rem;
+}
+.inline {
+  display: flex;
+  margin-bottom: 0.7rem;
+}
+.inline > .title {
+  min-width: 12rem;
+  text-transform: uppercase;
+  font-family: text-font-bold;
+}
+.inline > .title > span {
+  padding-right: 2rem;
+}
+.inline > .title,
+.inline > .text {
+  font-size: 1.3rem;
+  color: #777777;
+  line-height: 1.8;
 }

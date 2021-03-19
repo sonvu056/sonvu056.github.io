@@ -96,8 +96,8 @@ main {
 }
 .button-style-2 > a:hover,
 .active > a{
-  color: white !important;
-  background-color: #ffc311 !important;
+  color: white;
+  background-color: #ffc311;
 }
 .white {
   color: white;

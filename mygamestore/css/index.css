@@ -1092,7 +1092,7 @@
   .copyright-content {
     margin-bottom: 2rem;
   }
-  .app-platform > li > a > div > p:first-child{
+  .app-platform > li > a > div > p:first-child {
     display: none;
   }
 }
@@ -1170,10 +1170,10 @@
   .header {
     padding: 1.5rem 0;
   }
-  .carousel-inner .item{
+  .carousel-inner .item {
     height: 40rem;
   }
-  .carousel-inner .item img{
+  .carousel-inner .item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1181,7 +1181,7 @@
   .categorized-games-tab {
     justify-content: flex-start;
   }
-  .categorized-games-tab li{
+  .categorized-games-tab li {
     margin: 0 1rem 1rem 1.5rem !important;
     width: calc((100% - 9rem) / 3);
   }
@@ -1189,7 +1189,7 @@
     font-size: 1rem;
   }
   .footer-inner {
-    width: 100%
+    width: 100%;
   }
   .game-shop-inner {
     width: 95%;
@@ -1200,7 +1200,7 @@
   }
 }
 @media screen and (max-width: 767.98px) {
-  .carousel-inner .item{
+  .carousel-inner .item {
     height: 35rem;
   }
   .title {
@@ -1228,7 +1228,7 @@
     text-align: center;
     margin-bottom: 2rem;
   }
-  .game-shop-item a img{
+  .game-shop-item a img {
     width: 100%;
   }
 }
