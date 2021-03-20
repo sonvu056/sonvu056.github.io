@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="./library/bootstrap-5.0.0-beta1-dist/css/bootstrap.css"
     />
-    <title>Mygames - Blogs</title>
+    <title>Mygames - Item</title>
     <script
       src="https://kit.fontawesome.com/d362bd76db.js"
       crossorigin="anonymous"
@@ -23,9 +23,11 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/item.css" />
     <link rel="stylesheet" href="./css/page-header-footer.css" />
     <link rel="stylesheet" href="./css/upper-footer.css" />
     <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/blog-item.css">
   </head>
   <body>
     <header class="header container-fluid">
@@ -127,7 +129,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="container-fluid">
       <div id="overlay"></div>
       <div class="nav-mobi">
         <div class="nav-mobi-inner">
@@ -264,256 +266,419 @@
       <div class="main-wrapper container-fluid">
         <div class="page-info container-fluid">
           <div class="page-info-inner width-90 margin-auto">
-            <div class="page-title uppercase">Giỏ hàng</div>
+            <div class="page-title uppercase">ASSASSIN’S CREED: ORIGINS</div>
             <ul class="mybreadcrumb">
               <li><a href="index.html">Trang chủ</a></li>
-              <li><span>Blog</span></li>
+              <li><a href="./products.html">Blog</a></li>
+              <li><span>Blog-item</span></li>
             </ul>
           </div>
         </div>
-        <div class="container-fluid width-90 margin-auto">
-          <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12 left-layout">
-            <div class="content-box">
-              <div class="img">
-                <a href="blog-item.html">
-                  <img src="./img/main-blog-1.jpg" alt="" />
-                </a>
-              </div>
-              <div class="content-box-main">
-                <div class="title">Ra mắt trailer mới!</div>
-                <div class="text">
-                  Habitasse platea dictumst vestibulum rhoncus est pellentesque
-                  elit ullamcorper massa sapien faucibus et molestie ac feugiat
-                  sed. Elementum nibh tellus molestie nunc non blandit massa
-                  enim nec. Eget gravida cum sociis natoque penatibus magnis. At
-                  quis risus vulputate viverra maecenas.
+        <div class="main-content-wrapper margin-auto">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12 left-layout">
+              <div class="media-tab-content">
+                <div
+                  class="tab-panel active"
+                  role="tabpanel"
+                  id="image-gallery"
+                >
+                  <div class="mySlides">
+                    <img src="./img/gallery-1.jpg" style="width: 100%" />
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/gallery-2.jpg" style="width: 100%" />
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/gallery-3.jpg" style="width: 100%" />
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/gallery-4.jpg" style="width: 100%" />
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/gallery-5.jpg" style="width: 100%" />
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/gallery-6.jpg" style="width: 100%" />
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <div class="row">
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-1.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(1)"
+                      />
+                    </div>
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-2.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(2)"
+                      />
+                    </div>
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-3.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(3)"
+                      />
+                    </div>
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-4.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(4)"
+                      />
+                    </div>
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-5.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(5)"
+                      />
+                    </div>
+                    <div class="column-img">
+                      <img
+                        class="demo cursor"
+                        src="./img/gallery-6.jpg"
+                        style="width: 100%"
+                        onclick="currentSlide(6)"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="bottom">
+              </div>
+              <div class="content-box game-content">
+                <div class="content-box-title">Về <span>Trò chơi</span></div>
+                <p>
+                  Rốt cuộc sau hàng tháng trời khiến người chơi phải đoán già
+                  đoán non với những tin đồn đủ kiểu, sáng nay theo giờ Việt Nam
+                  (27-10-2017), tại buổi họp báo chính thức trước thềm E3 2017
+                  của Microsoft, dòng game <b>Assassin’s Creed</b> đã chính thức
+                  trở lại với phiên bản mới. Đó chính là
+                  <b>Assassin’s Creed Origins</b>.
+                </p>
+                <p>
+                  Đúng như các đồn đoán, <b>Assassin’s Creed Origins</b> sẽ có
+                  bối cảnh diễn ra tại Ai Cập cổ, nơi các Pharaoh vẫn nắm quyền
+                  trị vì đất nước của các Kim tự tháp. Cụ thể hơn, các sự kiện
+                  của <b>Assassin’s Creed Origins </b> vào thời kỳ Đế quốc La Mã
+                  đã đặt chân đến Ai Cập và đang tìm cách dần dần khống chế đất
+                  nước này.
+                </p>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/cUuKIpCM2o0"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Nhân vật chính của game là Bayek – chiến binh lão luyện được
+                  xem như một trong “lá chắn” bảo hộ của Ai Cập và chính là
+                  người đã mở đường sáng lập hội Sát Thủ –
+                  <b>Assassin’s Brotherhood</b> – về sau này.
+                </p>
+                <p>
+                  Bên cạnh thế giới mở rộng lớn, đa dạng mang “thương hiệu”
+                  Ubisoft trải dài từ những dải sa mạc khô cằn đến những ốc đảo
+                  xanh tươi, từ những con sóng bạc của Địa Trung Hải bao lao đến
+                  những kim tự tháp sừng sững trên cao nguyên Giza thần thánh,
+                  <b>Assassin’s Creed Origins</b> còn hứa hẹn mang đến sự cải
+                  tiến mạnh mẽ trong lối chơi của mình, đề cao sự tự do và khả
+                  năng triển khai các kế hoạch của người chơi cũng như cơ chế
+                  chiến đấu được làm mới một cách phù hợp với bước tiến của
+                  <b>Assassin’s Creed</b> trong phiên bản mới nhất này.
+                </p>
+                <img
+                  src="./img/gallery-5.jpg"
+                  alt=""
+                  style="margin-bottom: 2rem"
+                />
+                <p>
+                  Mới đây, hãng game Pháp đã công bố chế độ chơi Discovery Tour
+                  (tên đầy đủ: Discovery Tour by Assassin’s Creed: Ancient
+                  Egypt) của <b>Assassin’s Creed Origins</b>. Đến với phiên bản
+                  <b>Assassin’s Creed</b> mới nhất vào đầu năm sau thông qua một
+                  bản cập nhật nội dung miễn phí, Discovery Tour là phần chơi
+                  thiên hoàn toàn về yếu tố giáo dục kết hợp giải trí, tập trung
+                  cung cấp cho người chơi các thông tin về lịch sử, địa lý, văn
+                  hóa,… của đất nước Ai Cập thời cổ đại khi cho phép bạn thoải
+                  mái “du lịch” trong thế giới của
+                  <b>Assassin’s Creed Origins</b> như một lữ khách thay vì một
+                  chiến binh.
+                </p>
+                <p>
+                  Phỏng theo chính sử, thế giới của
+                  <b>Assassin’s Creed Origins</b> là nơi các thế lực chính trị
+                  và quân sự trong lẫn ngoài Ai Cập, đặc biệt là đế quốc La Mã
+                  hùng mạnh, tranh giành ảnh hưởng quyết liệt trong thời kỳ trị
+                  vì của Nữ Hoàng Cleopatra – vị Pharaoh cuối cùng của Ai Cập.
+                  Giữa hoàn cảnh lịch sử phức tạp đó, nhân vật chính Bayek sẽ
+                  đóng một vai trò quan trọng ảnh hưởng không nhỏ đến cán cân
+                  quyền lực ở đất nước của các Kim Tự Tháp cũng như có ảnh hưởng
+                  sâu sắc đến sự hình thành tổ chức Assassin.
+                </p>
+              </div>
+              <div class="social">
+                <ul class="row social-share-links d-flex">
+                  <li class="facebook">
+                    <a href="">
+                      <i class="fab fa-facebook-f"></i>
+                      <span>Share on Facebook</span></a
+                    >
+                  </li>
+                  <li class="twitter">
+                    <a href="">
+                      <i class="fab fa-twitter"></i>
+                      <span>Share on Twitter</span>
+                    </a>
+                  </li>
+                  <li class="google-plus">
+                    <a href="">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li class="pinterest">
+                    <a href="">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                  <li class="linkedin">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="whatsapp">
+                    <a href="">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li class="envelope">
+                    <a href="">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-box author">
+                <div class="content-box-title">tác <span>giả</span></div>
+                <div class="comment d-flex">
                   <div class="left">
-                    <ul>
-                      <li>
-                        <img class="avatar" src="./img/avatar-1.png" alt="" />
-                        <span>John Doe</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-comments"></i>
-                        <span>0 Bình luận</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-folder-open"></i>
-                        <span>Videos</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-clock"></i>
-                        <span>26.3.2021</span>
-                      </li>
-                    </ul>
+                    <a class="avatar" href="">
+                      <img src="./img/avatar-1.png" alt="" />
+                    </a>
                   </div>
                   <div class="right">
-                    <a href="">Xem thêm</a>
+                    <ul class="author-social d-flex align-items-center">
+                      <li>
+                        <a
+                          href="#"
+                          class="facebook"
+                          title="Facebook"
+                          target="_blank"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="twitter"
+                          title="Twitter"
+                          target="_blank"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="google-plus"
+                          title="Google Plus"
+                          target="_blank"
+                          ><i class="fab fa-google-plus-g"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="instagram"
+                          title="Instagram"
+                          target="_blank"
+                          ><i class="fab fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                    <p class="username">
+                      <a href="">John Doe</a>
+                    </p>
+                    <p class="comment-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quasi, enim expedita autem ullam nesciunt provident
+                      voluptate laudantium similique suscipit magni dolore nemo
+                      architecto, a, deleniti perferendis. Eveniet, asperiores.
+                      Iure, molestias?
+                    </p>
                   </div>
                 </div>
+              </div>
+              <div class="content-box your-comment" id="your-comment">
+                <div class="content-box-title">
+                  Bình Luận <span>Của Bạn</span>
+                </div>
+                <form action="" method="post" id="" class="comment-form">
+                  <div class="form-textarea">
+                    <textarea
+                      class="form-control"
+                      placeholder="Bình luận của bạn"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <div class="form-inputs">
+                    <div class="name">
+                      <input
+                        class="form-control"
+                        placeholder="Tên"
+                        type="text"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="email">
+                      <input
+                        class="form-control"
+                        placeholder="Your Comment"
+                        type="text"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="button">
+                      <button type="button">Gửi</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="content-box">
-              <div class="img">
-                <a href="">
-                  <img src="./img/main-blog-2.jpg" alt="" />
-                </a>
-              </div>
-              <div class="content-box-main">
-                <div class="title">Ra mắt trailer mới!</div>
-                <div class="text">
-                  Habitasse platea dictumst vestibulum rhoncus est pellentesque
-                  elit ullamcorper massa sapien faucibus et molestie ac feugiat
-                  sed. Elementum nibh tellus molestie nunc non blandit massa
-                  enim nec. Eget gravida cum sociis natoque penatibus magnis. At
-                  quis risus vulputate viverra maecenas.
+            <div class="col-lg-4 col-md-4 col-sm-12 col-sx-12 right-layout">
+              <div class="content-box">
+                <div class="content-box-title">
+                  Bài viết <span>Mới nhất</span>
                 </div>
-                <div class="bottom">
-                  <div class="left">
-                    <ul>
-                      <li>
-                        <img class="avatar" src="./img/avatar-1.png" alt="" />
-                        <span>John Doe</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-comments"></i>
-                        <span>0 Bình luận</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-folder-open"></i>
-                        <span>Videos</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-clock"></i>
-                        <span>26.3.2021</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="right">
-                    <a href="">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="content-box">
-              <div class="img">
-                <a href="">
-                  <img src="./img/main-blog-3.jpg" alt="" />
-                </a>
-              </div>
-              <div class="content-box-main">
-                <div class="title">Ra mắt trailer mới!</div>
-                <div class="text">
-                  Habitasse platea dictumst vestibulum rhoncus est pellentesque
-                  elit ullamcorper massa sapien faucibus et molestie ac feugiat
-                  sed. Elementum nibh tellus molestie nunc non blandit massa
-                  enim nec. Eget gravida cum sociis natoque penatibus magnis. At
-                  quis risus vulputate viverra maecenas.
-                </div>
-                <div class="bottom">
-                  <div class="left">
-                    <ul>
-                      <li>
-                        <img class="avatar" src="./img/avatar-1.png" alt="" />
-                        <span>John Doe</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-comments"></i>
-                        <span>0 Bình luận</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-folder-open"></i>
-                        <span>Videos</span>
-                      </li>
-                      <li>
-                        <i class="fas fa-clock"></i>
-                        <span>26.3.2021</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="right">
-                    <a href="">Xem thêm</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="button-next">
-              <a href="" class="btn-next">Tiếp ></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 col-sx-12 right-layout">
-            <div class="content-box">
-              <div class="content-box-title">
-                Bài viết <span>Mới nhất</span>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
-              <div class="lateset-blog">
-                <div class="blog-news-item column-item d-flex">
-                  <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
-                  <div class="column-item-text">
-                    <div class="blog-news-title latest-blog-title">
-                      <a href="">Trailer mới ra mắt!</a>
+                <div class="lateset-blog">
+                  <div class="blog-news-item column-item d-flex">
+                    <a href=""><img src="./img/blog-1.jpg" alt="" /></a>
+                    <div class="column-item-text">
+                      <div class="blog-news-title latest-blog-title">
+                        <a href="">Trailer mới ra mắt!</a>
+                      </div>
+                      <ul>
+                        <li class="latest-blog-date">
+                          <i class="far fa-clock"></i>
+                          <span>26/3/2020</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul>
-                      <li class="latest-blog-date">
-                        <i class="far fa-clock"></i>
-                        <span>26/3/2020</span>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="content-box category">
+              <div class="content-box category">
                 <div class="content-box-title">Danh <span>mục</span></div>
                 <ul>
-                    <li>eSport (1)</li>
-                    <li>Matches (3)</li>
-                    <li>News (4)</li>
-                    <li>Reviews (6)</li>
-                    <li>Videos (1)</li>
+                  <li>eSport (1)</li>
+                  <li>Matches (3)</li>
+                  <li>News (4)</li>
+                  <li>Reviews (6)</li>
+                  <li>Videos (1)</li>
                 </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -810,5 +975,41 @@
       </div>
     </footer>
     <script src="./js/myjs.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
   </body>
 </html>
