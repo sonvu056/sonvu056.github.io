@@ -23,9 +23,9 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/item.css" />
     <link rel="stylesheet" href="./css/page-header-footer.css" />
     <link rel="stylesheet" href="./css/upper-footer.css" />
-    <link rel="stylesheet" href="./css/item.css" />
   </head>
   <body>
     <header class="header container-fluid">
@@ -666,9 +666,170 @@
                   </div>
                 </div>
               </div>
-              
+              <div class="social">
+                <ul class="row social-share-links d-flex">
+                  <li class="facebook">
+                    <a href="">
+                      <i class="fab fa-facebook-f"></i>
+                      <span>Share on Facebook</span></a>
+                  </li>
+                  <li class="twitter">
+                    <a href="">
+                      <i class="fab fa-twitter"></i>
+                      <span>Share on Twitter</span>
+                    </a>
+                  </li>
+                  <li class="google-plus">
+                    <a href="">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li class="pinterest">
+                    <a href="">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                  <li class="linkedin">
+                    <a href="">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="whatsapp">
+                    <a href="">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li class="envelope">
+                    <a href="">
+                      <i class="far fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-box comments-section">
+                <div class="content-box-title">Bình <span>Luận</span></div>
+                <div class="comment d-flex">
+                  <div class="left">
+                    <a class="avatar" href="">
+                      <img src="./img/avatar-1.png" alt="">
+                    </a>
+                  </div>
+                  <div class="right">
+                    <p class="username">
+                      <a href="">John Doe</a>
+                    </p>
+                    <p class="comment-text">Game rất cuốn. Chơi là ghiền</p>
+                    <ul>
+                      <li>
+                        <i class="far fa-clock" aria-hidden="true"></i>
+                        <span>26.3.2021</span>
+                      </li>
+                      <li class="rep">
+                        <a href="#your-comment">
+                          <i class="fas fa-reply"></i>
+                          <span class="uppercase">Reply</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment d-flex reply">
+                  <div class="left">
+                    <a class="avatar" href="">
+                      <img src="./img/avatar-2.png" alt="">
+                    </a>
+                  </div>
+                  <div class="right">
+                    <p class="username">
+                      <a href="">Johnny Depp</a>
+                    </p>
+                    <p class="comment-text">Game chơi rất cuốn hút, có nhiều thay đổi nhưng không hề mất chất, nhưng vẫn còn vài bug cần được fix lại, chung quy thì game rất ok.</p>
+                    <ul>
+                      <li>
+                        <i class="far fa-clock" aria-hidden="true"></i>
+                        <span>26.3.2021</span>
+                      </li>
+                      <li class="rep">
+                        <a href="#your-comment">
+                          <i class="fas fa-reply"></i>
+                          <span class="uppercase">Reply</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment d-flex reply">
+                  <div class="left">
+                    <a class="avatar" href="">
+                      <img src="./img/avatar-3.png" alt="">
+                    </a>
+                  </div>
+                  <div class="right">
+                    <p class="username">
+                      <a href="">Tom Cruise</a>
+                    </p>
+                    <p class="comment-text">Turns out Egypt was the best sandbox all along.</p>
+                    <ul>
+                      <li>
+                        <i class="far fa-clock" aria-hidden="true"></i>
+                        <span>26.3.2021</span>
+                      </li>
+                      <li class="rep">
+                        <a href="#your-comment">
+                          <i class="fas fa-reply"></i>
+                          <span class="uppercase">Reply</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comment d-flex">
+                  <div class="left">
+                    <a class="avatar" href="">
+                      <img src="./img/avatar-1.png" alt="">
+                    </a>
+                  </div>
+                  <div class="right">
+                    <p class="username">
+                      <a href="">John Doe</a>
+                    </p>
+                    <p class="comment-text">Game rất cuốn. Chơi là ghiền</p>
+                    <ul>
+                      <li>
+                        <i class="far fa-clock" aria-hidden="true"></i>
+                        <span>26.3.2021</span>
+                      </li>
+                      <li class="rep">
+                        <a href="#your-comment">
+                          <i class="fas fa-reply"></i>
+                          <span class="uppercase">Reply</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="content-box your-comment" id="your-comment">
+                <div class="content-box-title">Bình Luận <span>Của Bạn</span></div>
+                <form action="" method="post" id="" class="comment-form">
+                  <div class="form-textarea">
+                    <textarea class="form-control" placeholder="Bình luận của bạn" rows="4"></textarea>
+                  </div>
+                  <div class="form-inputs">
+                    <div class="name">
+                      <input class="form-control" placeholder="Tên" type="text" aria-required="true">
+                    </div>
+                    <div class="email">
+                      <input class="form-control" placeholder="Your Comment" type="text" aria-required="true">
+                    </div>
+                    <div class="button">
+                      <button type="button">Gửi</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-sx-12 ight-layout">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-sx-12 right-layout">
               <div class="content-box game-details">
                 <div class="content-box-title">
                   Thông tin <span>Trò chơi</span>
@@ -762,8 +923,140 @@
                   </li>
                 </ul>
               </div>
+              <div class="content-box poster">
+                <div class="content-box-title">Poster</div>
+                <img src="./img/poster.png" alt="">
+                <p>Ai Cập cổ đại, một vùng đất của sự hùng vĩ và đầy mưu mô, đang biến mất trong một cuộc chiến tranh giành quyền lực tàn nhẫn.</p>
+              </div>
+              <div class="content-box game-language">
+                <div class="content-box-title">Ngôn <span>ngữ</span></div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Ngôn ngữ</th>
+                      <th scope="col">Giao diện</th>
+                      <th scope="col">Âm thanh</th>
+                      <th scope="col">Phụ đề</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Anh</th>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Đức</th>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bồ Ban Nha</th>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nhật Bản</th>
+                      <td><i class="fas fa-check"></i></td>
+                      <td></td>
+                      <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tây Ban Nha</th>
+                      <td></td>
+                      <td><i class="fas fa-check"></i></td>
+                      <td><i class="fas fa-check"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="content-box pegi">
+                <div class="pegi-img">
+                  <img src="./img/16.png" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Quas, enim. Numquam magnam, nemo, fuga veniam earum ut libero</b></p>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="container-fluid newsletter">
+            <form action="" method="get" class="newsletter-inner">
+              <div
+                class="newsletter-wrapper d-flex justify-content-between align-items-center flex-wrap margin-auto width-90"
+              >
+                <div class="item newsletter-title uppercase">newsletter</div>
+                <div class="item newsletter-input">
+                  <input
+                    type="text"
+                    name="adress"
+                    placeholder="Địa chỉ email của bạn"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="item newsletter-input">
+                  <input
+                    type="text"
+                    name="last-name"
+                    placeholder="Họ"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="item newsletter-input">
+                  <input
+                    type="text"
+                    name="first-name"
+                    placeholder="Tên"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="item submit">
+                  <button type="submit">Gửi</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        <div class="container-fluid social-media-section width-90 justify-content-between">
+            <ul class="social-links d-flex justify-content-between">
+              <li>
+                <a href="#" class="facebook" title="Facebook" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter" title="Twitter" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="google-plus" title="Google Plus" target="_blank">
+                  <i class="fab fa-google-plus-g"></i>
+                  <span>Google Plus</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube" title="YouTube" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                  <span>Youtube</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="instagram" title="Instagram" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitch" title="Twitch" target="_blank">
+                  <i class="fab fa-twitch"></i>
+                  <span>Twitch</span>
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </main>

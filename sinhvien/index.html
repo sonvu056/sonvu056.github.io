@@ -34,31 +34,11 @@
             <th scope="col"></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="main">
           <tr>
             <td>Nguyễn Văn A</td>
             <td>2000</td>
             <td>nguyenvana@gmail.com</td>
-            <td>876-130-6017</td>
-            <td>
-              <a class="edit" href="">Chỉnh sửa</a>
-              <a class="delete" href="">Xóa</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Nguyễn Văn B</td>
-            <td>2000</td>
-            <td>nguyenvanb@gmail.com</td>
-            <td>876-130-6017</td>
-            <td>
-              <a class="edit" href="">Chỉnh sửa</a>
-              <a class="delete" href="">Xóa</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Nguyễn Văn C</td>
-            <td>2000</td>
-            <td>nguyenvanc@gmail.com</td>
             <td>876-130-6017</td>
             <td>
               <a class="edit" href="">Chỉnh sửa</a>
@@ -74,4 +54,33 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"
   ></script>
+  <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          const users = JSON.parse(this.responseText);
+          let content = ``;
+
+          for (let i = 0; i < users.length; i++) {
+            content += `<tr>
+                <td>${users[i].name}</td>
+                <td>${users[i].birthday}</td>
+                <td>${users[i].email}</td>
+                <td>${users[i].phone}</td>
+                <td>
+                  <a class="edit" href="">Chỉnh sửa</a>
+                  <a class="delete" href="">Xóa</a>
+                </td>
+              </tr>`;
+          }
+
+          document.getElementById(`main`).innerHTML = content;
+        }
+      };
+      xhttp.open("GET", "http://localhost:3000/users", true);
+      xhttp.send();
+    }
+    loadDoc();
+  </script>
 </html>

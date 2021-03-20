@@ -44,6 +44,22 @@
 .newsletter-wrapper button:hover {
   border: none;
 }
+.submit > button {
+  padding: 13px 20px;
+  color: #ffc311;
+  background-color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: text-font-bold;
+  width: 100%;
+  line-height: 1.5;
+  outline: none;
+}
+.submit > button:hover {
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.3s;
+}
 .newsletter-input > input::placeholder {
   color: white;
 }

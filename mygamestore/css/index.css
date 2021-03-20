@@ -362,6 +362,16 @@
   width: 100%;
   margin-left: 0;
 }
+.platform-btn a {
+  color: #ffc311;
+  text-decoration: none;
+}
+.platform-btn:hover a {
+  background-color: #ffc311 !important;
+}
+.platform-btn.active a {
+  color: white;
+}
 .game {
   margin-bottom: 2rem;
 }
@@ -493,6 +503,7 @@
   font-family: text-font-bold;
   width: 100%;
   line-height: 1.5;
+  outline: none;
 }
 .submit > button:hover {
   background-color: black;
