@@ -892,6 +892,9 @@
   border: 1px solid white;
   align-items: center;
 }
+.app-platform > li > a > div {
+  font-size: 1.3rem;
+}
 .app-platform > li > a:hover {
   background-color: #ffc311;
 }
