@@ -104,11 +104,11 @@
     <script>
       function loadEditUser() {
         $.ajax({
-          url: "http://localhost:3001/users/" + localStorage.getItem("idUser"),
+          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + localStorage.getItem("idUser"),
           method: "GET",
           success: function (user) {
             $("#name").val(user.name);
-            $("#birthYear").val(user.birthday);
+            $("#birthYear").val(user.birthYear);
             $("#email").val(user.email);
             $("#phone").val(user.phone);
           },
@@ -127,7 +127,7 @@
         } else {
           $.ajax({
             url:
-              "http://localhost:3001/users/" + localStorage.getItem("idUser"),
+              "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + localStorage.getItem("idUser"),
             method: "PUT",
             data: user,
           });

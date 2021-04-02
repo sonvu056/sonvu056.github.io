@@ -122,7 +122,7 @@
     <script>
       function loadDocJQuery() {
         $.ajax({
-          url: "http://localhost:3001/users",
+          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users",
           method: "GET",
         }).done(function (users) {
           let content = ``;
@@ -130,7 +130,7 @@
             content += `<tr id = "user${user.id}">
                             <td><input type="checkbox" id="${user.id}"></td>
                             <td>${user.name}</td>
-                            <td>${user.birthday}</td>
+                            <td>${user.birthYear}</td>
                             <td>${user.email}</td>
                             <td>${user.phone}</td>
                             <td>
@@ -149,7 +149,7 @@
       function deleteUser() {
         let id = localStorage.getItem("idUser");
         $.ajax({
-          url: "http://localhost:3001/users/" + id,
+          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + id,
           method: "DELETE",
         }).done($(id).remove());
       }
@@ -164,7 +164,7 @@
         for (let i = 0; i < checkboxes.length; i++) {
           if (checkboxes[i].checked == true) {
             $.ajax({
-              url: "http://localhost:3001/users/" + checkboxes[i].id,
+              url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + checkboxes[i].id,
               method: "DELETE",
             }).done($(checkboxes[i].id).remove());
           }

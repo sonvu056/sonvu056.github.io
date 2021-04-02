@@ -148,12 +148,12 @@
           alert(`Không hợp lệ`);
         } else {
           $.ajax({
-            url: "http://localhost:3001/users",
+            url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/",
             method: "POST",
             data: user,
           });
           name: $("#name").val("");
-          birthday: $("#birthday").val("");
+          birthday: $("#birthYear").val("");
           email: $("#email").val("");
           phone: $("#phone").val("");
           alert("Lưu thành công");
