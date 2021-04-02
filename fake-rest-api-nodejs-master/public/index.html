@@ -24,7 +24,19 @@
   <body>
     <div class="container">
       <h1 class="text-center mt-4">Danh sách học viên</h1>
-
+      <nav class="navbar navbar-light"  style="padding-left: 0;">
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </nav>
       <p>
         <a href="create.html" class="btn btn-success"
           ><i class="fa fa-plus-circle"></i> Thêm học viên</a
@@ -164,7 +176,9 @@
         for (let i = 0; i < checkboxes.length; i++) {
           if (checkboxes[i].checked == true) {
             $.ajax({
-              url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + checkboxes[i].id,
+              url:
+                "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" +
+                checkboxes[i].id,
               method: "DELETE",
             }).done($(checkboxes[i].id).remove());
           }
