@@ -137,6 +137,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      let API = "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users"
       function createUser() {
         let user = {
           name: $("#name").val(),
@@ -148,7 +149,7 @@
           alert(`Không hợp lệ`);
         } else {
           $.ajax({
-            url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/",
+            url: API,
             method: "POST",
             data: user,
           });

@@ -105,6 +105,7 @@
               <button
                 type="button"
                 class="btn btn-primary"
+                data-dismiss="modal"
                 onclick="deleteUser()"
               >
                 Yes
@@ -134,7 +135,7 @@
     <script>
       function loadDocJQuery() {
         $.ajax({
-          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users",
+          url: "https://localhost:3001/users",
           method: "GET",
         }).done(function (users) {
           let content = ``;
@@ -159,11 +160,11 @@
         localStorage.setItem("idUser", id);
       }
       function deleteUser() {
-        let id = localStorage.getItem("idUser");
+        let id = "#user" + localStorage.getItem("idUser");
         $.ajax({
-          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + id,
+          url: "https://localhost:3001/users/" + id,
           method: "DELETE",
-        }).done($(id).remove());
+        }).done($(id).remove());       
       }
       function toggle(source) {
         let checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -175,12 +176,14 @@
         let checkboxes = document.querySelectorAll('input[type="checkbox"]');
         for (let i = 0; i < checkboxes.length; i++) {
           if (checkboxes[i].checked == true) {
+            let userID = "#user" + checkboxes[i].id;
             $.ajax({
               url:
-                "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" +
+                "https://localhost:3001/users/" +
                 checkboxes[i].id,
               method: "DELETE",
-            }).done($(checkboxes[i].id).remove());
+            });
+            $(userID).remove()
           }
         }
       }

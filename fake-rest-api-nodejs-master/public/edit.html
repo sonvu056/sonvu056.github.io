@@ -102,9 +102,10 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      let API = "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/"
       function loadEditUser() {
         $.ajax({
-          url: "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + localStorage.getItem("idUser"),
+          url: API + localStorage.getItem("idUser"),
           method: "GET",
           success: function (user) {
             $("#name").val(user.name);
@@ -127,7 +128,7 @@
         } else {
           $.ajax({
             url:
-              "https://quan-ly-sinh-vien-techmaster.herokuapp.com/users/" + localStorage.getItem("idUser"),
+              API + localStorage.getItem("idUser"),
             method: "PUT",
             data: user,
           });
