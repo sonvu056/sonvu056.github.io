@@ -867,40 +867,6 @@
   color: white;
   font-size: 1rem;
 }
-.app-platform > li > a > i {
-  font-size: 2rem;
-  padding-right: 1rem;
-}
-.app-platform > li > a > div > p {
-  color: white;
-  font-size: 1.2rem;
-  text-transform: none;
-}
-.app-platform {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.app-platform > li {
-  width: calc((100% - 1rem) / 2);
-  padding-bottom: 2rem;
-}
-.app-platform > li > a {
-  display: flex;
-  padding: 1.5rem 2rem;
-  margin-right: 0;
-  border: 1px solid white;
-  align-items: center;
-}
-.app-platform > li > a > div {
-  font-size: 1.3rem;
-}
-.app-platform > li > a:hover {
-  background-color: #ffc311;
-}
-.app-platform > li > a:hover > i {
-  color: white;
-}
 .platform-name {
   font-weight: bolder;
 }
