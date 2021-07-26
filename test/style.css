@@ -1,0 +1,78 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background-color: #428ef7;
+  padding: 20px;
+}
+
+.top-level-menu {
+  display: flex;
+}
+
+.top-level-menu li {
+  margin-right: 20px;
+  background-color: #9ec7ff;
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 150px;
+}
+.top-level-menu a {
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  display: block;
+  line-height: 30px;
+}
+.top-level-menu a:hover {
+  color: #000000;
+}
+
+.top-level-menu > li:hover {
+  background: white;
+}
+
+.top-level-menu > li:hover a {
+  color: black;
+}
+
+.top-level-menu li:hover > ul {
+  display: inline;
+}
+
+.second-level-menu {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  display: none;
+  padding-top: 20px;
+  background-color: #6eabff;
+}
+
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  padding-top: 20px;
+  display: none;
+  background-color: #6eabff;
+}
+
+.second-level-menu > li,
+.third-level-menu > li {
+  position: relative;
+  height: 25px;
+  width: 120px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.second-level-menu > li:hover,
+.third-level-menu > li:hover {
+  background: white;
+}
